@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "consumed_item3": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:stone_pickaxe",  
+          "components": {
+            "minecraft:item_name": "Scroll Table",
+            "minecraft:consumable": {
+              "consume_seconds": 0,
+              "animation": "none",
+              "sound": "minecraft:intentionally_empty",
+              "has_consume_particles": false
+                        },
+      "item_model": "minecraft:enchanting_table"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/used_items/scroll_table/place_ray"  },
+  "sends_telemetry_event": false
+}

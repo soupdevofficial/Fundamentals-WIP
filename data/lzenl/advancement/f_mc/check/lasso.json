@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "lead": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:lead",
+            "components": {
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/used_items/lead/conv_1"
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Mithra, the Noon",
+        "description": "unlock the schorching flame",
+        "icon": {
+            "id": "writable_book",
+            "count": 1
+        },
+              "show_toast": false,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

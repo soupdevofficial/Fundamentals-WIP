@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "unlock": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "minecraft:lightning_rod"
+        }
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "lzenl:f_mc/copper_tetheron"
+      ]
+    },
+    "sends_telemetry_event": false
+  }

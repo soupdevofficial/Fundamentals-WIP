@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "lzenl:weapons/cooldown"
+  },
+  "sends_telemetry_event": false
+}

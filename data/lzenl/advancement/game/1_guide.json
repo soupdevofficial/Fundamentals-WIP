@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "The All Knowing",
+        "description": "speak to the old man",
+        "icon": {
+            "id": "writable_book",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

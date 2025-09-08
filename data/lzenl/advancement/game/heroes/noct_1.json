@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Noct, the Night",
+        "description": "unlock the radiant abyss",
+        "icon": {
+            "id": "writable_book",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

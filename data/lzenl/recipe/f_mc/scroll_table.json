@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "gold_ingot",
+    "X": "dark_oak_planks",
+    "B": "amethyst_shard"
+  },
+  "pattern": [
+    "B#B",
+    "#X#",
+    "B#B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:stone_pickaxe",
+    "components": {
+      "minecraft:item_name": "Scroll Table",
+            "minecraft:consumable": {
+        "consume_seconds": 0,
+        "animation": "none",
+        "sound": "intentionally_empty",
+        "has_consume_particles": false
+          },
+            "item_model": "enchanting_table",
+            "!minecraft:tool": {},
+            "!attribute_modifiers": {}
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Ohhh Shiny!",
+        "description": "get a gold tool/item",
+        "icon": {
+            "id": "gold_ingot",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/5_bloom",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

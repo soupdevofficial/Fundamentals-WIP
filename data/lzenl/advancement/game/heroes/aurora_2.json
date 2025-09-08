@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Dawnbreaker I              ",
+        "description": "raises player's max health by 2 hearts",
+        "icon": {
+            "id": "stone_sword",
+            "count": 1
+        },
+                  "show_toast": false,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/aurora_1",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

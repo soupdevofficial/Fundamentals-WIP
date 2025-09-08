@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Will of the Dawn I          ",
+        "description": "grants the player permanent absorption\n\nregenerates every 1 minute",
+        "icon": {
+            "id": "golden_apple",
+            "count": 1
+        },
+             "show_toast": false,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/aurora_4",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

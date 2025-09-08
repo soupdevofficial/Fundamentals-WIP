@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "hot": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_fire",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/gameplay/player/temp/block/fire"
+  },
+  "sends_telemetry_event": false
+}

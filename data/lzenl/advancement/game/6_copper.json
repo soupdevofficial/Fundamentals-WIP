@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Bronze Age",
+        "description": "get a copper tool/item",
+        "icon": {
+            "id": "copper_ingot",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/5_bloom",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

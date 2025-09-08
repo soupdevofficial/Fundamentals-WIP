@@ -1,0 +1,12 @@
+##
+ # baked.mcfunction
+ # 
+ #
+ # Created by .
+##
+tag @s remove dry_clay_bucket
+tag @s add clay_bucket
+
+
+execute as @s run item replace entity @s contents with player_head[profile={properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTc0NDg4NzU3NjcwNiwKICAicHJvZmlsZUlkIiA6ICI2OTU3YjQyOTZiOTI0NGJkOGQzNWJiZGU4M2JiZDI3OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJjb2xpblBBUEEiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhOGM0NDQyZDdlZWRkYmQ3YzUwOWRiYWM4N2Y4YzEyMzJkZjViYWU0ODljNWRhM2E3MzkzMWM4OTA0Y2NkZCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]}] 1
+

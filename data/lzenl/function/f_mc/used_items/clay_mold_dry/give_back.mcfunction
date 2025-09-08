@@ -1,0 +1,16 @@
+##
+ # give-back.mcfunction
+ # 
+ #
+ # Created by .
+##
+execute if score #return .data matches 1 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold [shaped]",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:1}] 1
+execute if score #return .data matches 2 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold [shaped]",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:2}] 1
+execute if score #return .data matches 3 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold [shaped]",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:3}] 1
+execute if score #return .data matches 4 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold [shaped]",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:4}] 1
+execute if score #return .data matches 5 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold [shaped]",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:5}] 1
+execute if score #return .data matches 6 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold [shaped]",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:6}] 1
+execute if score #return .data matches 7 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold [shaped]",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:7}] 1
+execute if score #return .data matches 8 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold [shaped]",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:8}] 1
+
+execute if score #return .data matches 9 run give @p wooden_pickaxe[repair_cost=99,!attribute_modifiers,item_name="Dry Clay Mold",!tool,max_damage=99,!weapon,consumable={consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:gray_carpet",custom_data={id:9}] 1

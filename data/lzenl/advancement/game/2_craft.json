@@ -1,0 +1,21 @@
+{
+    "display": {
+        "title": "Craftmanship",
+        "description": "handcraft an item",
+        "icon": {
+            "id": "player_head",
+            "components": {
+                "profile": {"id":[2112596266,1113669941,-1336057881,-2008764531],"properties": [{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGMzNjA0NTIwOGY5YjVkZGNmOGM0NDMzZTQyNGIxY2ExN2I5NGY2Yjk2MjAyZmIxZTUyNzBlZThkNTM4ODFiMSJ9fX0="}]}
+            },
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/1_sit",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "effect_ab": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:absorption": {}
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/gameplay/combat/hero/aurora/effect_abs"
+  },
+  "sends_telemetry_event": false
+}

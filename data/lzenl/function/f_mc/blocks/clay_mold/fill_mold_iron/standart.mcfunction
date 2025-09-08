@@ -1,0 +1,6 @@
+##
+ # standart.mcfunction
+ # 
+ #
+ # Created by .
+##

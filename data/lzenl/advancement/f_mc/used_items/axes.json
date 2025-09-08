@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "mined_special": {
+        "trigger": "minecraft:item_durability_changed",
+        "conditions": {
+          "item": {
+            "items": "#axes"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "lzenl:f_mc/gameplay/log_conv/strip_block"
+    },
+    "sends_telemetry_event": false
+  }

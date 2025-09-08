@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Fundamentals",
+        "description": "",
+        "icon": {
+            "id": "grass_block"
+        },
+        "background": "block/mud",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

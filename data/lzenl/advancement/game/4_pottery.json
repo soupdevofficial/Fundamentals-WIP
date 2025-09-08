@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Mr. Potter",
+        "description": "handcraft clay items",
+        "icon": {
+            "id": "decorated_pot",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/3_stoneage",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

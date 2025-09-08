@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Pathfinder I                ",
+        "description": "unlocks the Pathfinder's Compass",
+        "icon": {
+            "id": "lodestone",
+            "count": 1
+        },
+                "show_toast": false,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/aurora_3",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Mine Craft",
+        "description": "handcraft the crafting table",
+        "icon": {
+            "id": "crafting_table",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "lzenl:game/6_iron",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

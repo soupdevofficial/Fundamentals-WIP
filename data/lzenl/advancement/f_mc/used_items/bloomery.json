@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "consumed_item3": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:wooden_pickaxe",  
+          "components": {
+            "minecraft:item_name": "Bloomery",
+            "minecraft:consumable": {
+              "consume_seconds": 0.0,
+              "animation": "block",
+              "sound": "minecraft:intentionally_empty",
+              "has_consume_particles": false
+                        },
+      "item_model": "minecraft:decorated_pot"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/used_items/bloomery/place_ray"  },
+  "sends_telemetry_event": false
+}

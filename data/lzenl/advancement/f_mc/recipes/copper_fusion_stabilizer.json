@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "unlock": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "minecraft:copper_bulb"
+        }
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "lzenl:f_mc/copper_fusion_stabilizer"
+      ]
+    },
+    "sends_telemetry_event": false
+  }

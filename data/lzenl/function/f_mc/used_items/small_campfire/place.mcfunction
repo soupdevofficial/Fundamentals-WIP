@@ -1,0 +1,10 @@
+##
+ # place.mcfunction
+ # 
+ #
+ # Created by .
+##
+
+playsound block.calcite.place master @a ~ ~ ~ 1 0.5 0
+
+execute align xyz run summon block_display ~0.49 ~ ~0.49 {Tags:["campfire_small"],Passengers:[{id:"minecraft:item_display",item:{id:"minecraft:stick",Count:1,components:{"minecraft:item_name":"Charred Stick"}},item_display:"none",transformation:[1f,0f,0f,0f,0f,0f,1f,0f,0f,-1f,0f,-0.0625f,0f,0f,0f,1f]},{id:"minecraft:item_display",item:{id:"minecraft:stick",Count:1,components:{"minecraft:item_name":"Charred Stick"}},item_display:"none",transformation:[0f,0.9659258263f,0.2588190451f,0.0625f,0f,-0.2588190451f,0.9659258263f,0.0625f,1f,0f,0f,0f,0f,0f,0f,1f]},{id:"minecraft:item_display",item:{id:"minecraft:stick",Count:1,components:{"minecraft:item_name":"Charred Stick"}},item_display:"none",transformation:[0.8669287215f,0.4687427242f,0.1694545674f,0.0625f,0.1694545674f,-0.5969026256f,0.7842145147f,0.125f,0.4687427242f,-0.6511432362f,-0.5969026256f,0f,0f,0f,0f,1f]},{id:"minecraft:item_display",item:{id:"minecraft:stick",Count:1,components:{"minecraft:item_name":"Charred Stick"}},item_display:"none",transformation:[0.5883128419f,-0.6187184335f,0f,0f,0f,0f,-1.138f,0f,0.5883128419f,0.6187184335f,0f,0f,0f,0f,0f,1f]},{id:"minecraft:item_display",item:{id:"minecraft:stick",Count:1,components:{"minecraft:item_name":"Charred Stick"}},item_display:"none",transformation:[-0.516410934f,-0.7315147251f,-0.445203273f,0.0625f,0.1694545674f,-0.5969026256f,0.7842145147f,0.125f,-0.8394074677f,0.329535222f,0.4322055537f,0f,0f,0f,0f,1f]},{id:"minecraft:item_display",item:{id:"minecraft:stick",Count:1,components:{"minecraft:item_name":"Charred Stick"}},item_display:"none",transformation:[-0.9659258263f,-0.25f,-0.0669872981f,0.0625f,0f,-0.2588190451f,0.9659258263f,0.0625f,-0.2588190451f,0.9330127019f,0.25f,0f,0f,0f,0f,1f]},{id:"minecraft:interaction",NoGravity:1b,Silent:1b,width:1.05f,height:0.5f,response:1b,Tags:["small_campfire"]}]}

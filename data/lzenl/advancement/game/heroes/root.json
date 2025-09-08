@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Heroes (Fundamentals)",
+        "description": "",
+        "icon": {
+            "id": "enchanted_book"
+        },
+        "background": "block/mud",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

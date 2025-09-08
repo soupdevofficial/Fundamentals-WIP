@@ -1,0 +1,63 @@
+{
+	"pack": {
+		"pack_format": 78,
+		"description": "rehaul minecraft completely"
+	},
+	"filter": {
+		"block": [
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/ender_eye\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/netherite_ingot\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/repair_item\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/.*_planks\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/.*_bed\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/raw_copper_block\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/crafting_table\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^advancement/adventure.*\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^advancement/end.*\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^advancement/husbandry.*\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^advancement/nether.*\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^advancement/story.*\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/wooden_.*\\.json$"
+		  }
+		  
+		]
+	  }
+}

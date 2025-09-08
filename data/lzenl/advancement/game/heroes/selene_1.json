@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Selene, the Dusk",
+        "description": "unlock the twilight shimmer",
+        "icon": {
+            "id": "writable_book",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

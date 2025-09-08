@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Grace Lit",
+        "description": "handcraft a [Small Campfire] and light it",
+        "icon": {
+            "id": "campfire",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "lzenl:game/2_craft",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

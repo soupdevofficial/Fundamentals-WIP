@@ -1,0 +1,12 @@
+##
+ # in_end.mcfunction
+ # 
+ #
+ # Created by .
+##
+
+execute as @n[type=minecraft:ender_dragon,distance=..1000] run function lzenl:f_mc/boss/enderdragon/start
+execute as @e[type=armor_stand,tag=dragon_tp,distance=..1000] at @s run function lzenl:f_mc/boss/enderdragon/spawn_move
+execute as @e[type=block_display,tag=dragon_root,scores={animation=1},distance=..1000] at @s run function lzenl:f_mc/boss/enderdragon/roar
+execute as @e[type=block_display,tag=dragon_root,scores={animation=4},distance=..1000] at @s run function lzenl:f_mc/boss/enderdragon/enlight
+execute at @e[type=block_display,tag=dragon_root,distance=..1000] run forceload add ~ ~

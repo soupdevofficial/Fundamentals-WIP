@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Pathfinder II               ",
+        "description": "unlocks the Pathfinder's Recovery Compass",
+        "icon": {
+            "id": "recovery_compass",
+            "count": 1
+        },
+              "show_toast": false,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/aurora_5",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "consumed_item16": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:wooden_pickaxe",
+          "components": {
+            "consumable": {
+              "consume_seconds": 1,
+              "animation": "drink",
+              "sound": "ui.hud.bubble_pop",
+              "has_consume_particles": false,
+              "on_consume_effects": []
+            },
+            "item_name": "Thermostat"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/used_items/thermostat/used",
+    "loot": []
+  },
+  "sends_telemetry_event": false
+}

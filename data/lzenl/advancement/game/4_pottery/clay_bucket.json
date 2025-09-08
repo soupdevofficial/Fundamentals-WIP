@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Clay Bucket",
+        "description": "handcraft a [Clay Bucket]",
+        "icon": {
+            "id": "cauldron",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/3_stoneage",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

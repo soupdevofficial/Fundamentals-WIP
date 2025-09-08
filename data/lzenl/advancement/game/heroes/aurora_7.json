@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Will of the Dawn II         ",
+        "description": "when absorption is present on the player,\ngrants the player resistance",
+        "icon": {
+            "id": "shield",
+            "count": 1
+        },
+                "show_toast": false,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/aurora_6",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

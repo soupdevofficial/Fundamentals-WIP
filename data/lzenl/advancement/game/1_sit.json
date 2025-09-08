@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Take a Seat",
+        "description": "look straight down and tap [sneak]",
+        "icon": {
+            "id": "saddle",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

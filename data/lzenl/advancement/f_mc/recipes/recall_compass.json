@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "unlock": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "minecraft:compass"
+        }
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "lzenl:f_mc/recall_compass"
+      ]
+    },
+    "sends_telemetry_event": false
+  }

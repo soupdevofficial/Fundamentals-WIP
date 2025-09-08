@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "consumed_item18": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "firestarter":true
+              }
+          }
+          
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/used_items/firestarter/place_ray"
+  }
+}

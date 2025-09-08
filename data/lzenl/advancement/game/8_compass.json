@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Which Way?",
+        "description": "craft a [Compass]",
+        "icon": {
+            "id": "compass",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/7_crafting",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

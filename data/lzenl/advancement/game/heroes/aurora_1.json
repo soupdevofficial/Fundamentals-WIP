@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Aurora, the Dawn ",
+        "description": "unlock the guiding light",
+        "icon": {
+            "id": "writable_book",
+            "count": 1,
+            "components": {"item_name":"Aurora"}
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/heroes/root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
