@@ -23,10 +23,6 @@ give @p[tag=user,distance=..7] paper[item_name="Windcharge Scroll",enchantment_g
 
 
 
-
-
-
-
 execute if function lzenl:scroll_table/recipe/scroll_windcharge run item replace block ~ ~-1 ~ container.16 with stone_button[map_id=-1,map_color=9819352,item_model=filled_map,item_name=execute,enchantment_glint_override=true,custom_name={text:"Windcharge Scroll",italic:false},rarity=rare,custom_data={result:1b,run:'lzenl:scroll_table/return/scroll_windcharge'}]
 
 

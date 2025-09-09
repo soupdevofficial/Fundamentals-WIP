@@ -15,3 +15,4 @@ execute as @e[tag=dry_clay_bucket,type=armor_stand] at @s if entity @p[distance=
 execute as @e[tag=wet_clay_mold,type=block_display] at @s if entity @p[distance=..100] run function lzenl:f_mc/blocks/clay_mold_wet/dry
 execute as @e[tag=dry_clay_mold,type=block_display] at @s if entity @p[distance=..100] run function lzenl:f_mc/blocks/clay_mold_dry/wetting
 
+execute at @e[tag=beast_heart,type=block_display] if entity @p[distance=..25] run function lzenl:f_mc/blocks/beast_heart/pulse
