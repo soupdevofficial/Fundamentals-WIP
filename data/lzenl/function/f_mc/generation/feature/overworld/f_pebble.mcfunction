@@ -1,9 +1,6 @@
 ##
- # cave.mcfunction
+ # pebble.mcfunction
  # 
  #
  # Created by .
 ##
-
-
-

@@ -1,0 +1,28 @@
+##
+ # wayfinder.mcfunction
+ # 
+ #
+ # Created by .
+##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,6 @@
  # Created by .
 ##
 
-#execute unless entity @s[tag=check] run return fail
 tag @s remove check
 data remove storage temp data.check
 

@@ -21,7 +21,6 @@ data modify storage temp data.temp.slot8 set from entity @s Inventory[{Slot:8b}]
 execute if data entity @s equipment.offhand run data modify storage temp data.temp.slotoff set from entity @s equipment.offhand
 
 $data modify storage temp data."$(UUID)" set from storage minecraft:temp data.temp
-
 tag @s add check
 data remove storage minecraft:temp data.temp
 schedule function lzenl:f_mc/delayed_conditional 1t

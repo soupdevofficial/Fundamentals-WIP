@@ -5,11 +5,26 @@
  # Created by .
 ##
 
-setblock ~ ~ ~ beehive
-
-execute store result storage temp data.offset.x int 1 run random value -25..25
-execute store result storage temp data.offset.y int 1 run random value -25..25
-execute store result storage temp data.offset.z int 1 run random value -25..25
 
 
-function lzenl:f_mc/generation/positioned with storage temp data.offset
+
+execute store result score #gen.feature.count .data run random value 1..20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#features small things
+execute store result score #gen.feature.count .data run random value 1..20
+function lzenl:f_mc/generation/z_features

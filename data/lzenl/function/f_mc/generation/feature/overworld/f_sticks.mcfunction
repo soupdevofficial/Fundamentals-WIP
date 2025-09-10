@@ -1,0 +1,6 @@
+##
+ # sticks.mcfunction
+ # 
+ #
+ # Created by .
+##
