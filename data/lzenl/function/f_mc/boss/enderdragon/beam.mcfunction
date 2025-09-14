@@ -5,16 +5,12 @@
  # Created by .
 ##
 
-rotate @s ~ ~
+particle witch ~ ~ ~ 0.25 0.25 0.25 0.1 2 force @a
 
 
-execute unless block ~ ~ ~ #air run particle block_marker{block_state:"crying_obsidian"} ~ ~ ~ 0.2 0.2 0.2 0.0001 3 force @a
-
-
-particle dust_color_transition{from_color:10748019,to_color:15553781,scale:4} ~ ~ ~ 0 0 0 10 0 force @a
-
-damage @n[distance=..2] 5 dragon_breath by @s from @s
+execute as @e[distance=..2] at @s run damage @s 5 dragon_breath by @s from @s
+execute if block ^ ^ ^0.5 obsidian run particle block_marker{block_state:"crying_obsidian"} ^ ^ ^0.5 0.2 0.5 0.2 0.0001 5 force @a
+execute if block ~ ~ ~ obsidian run return run particle witch ~ ~ ~ 1 1 1 1 10
 
 execute if entity @s[distance=..100] positioned ^ ^ ^0.5 run function lzenl:f_mc/boss/enderdragon/beam
 
-execute if entity @s[distance=..0] run playsound block.beacon.activate hostile @a ~ ~ ~ 10 2

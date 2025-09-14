@@ -1,3 +1,4 @@
+playsound minecraft:entity.ender_dragon.flap hostile @a ~ ~ ~ 1 0
 # Dragon created via BDEngine
 
 data merge entity @e[type=item_display,tag=dragon_0,distance=..1,limit=1,sort=nearest] {transformation:[0.0206745984f,0.936102609f,0.1117382722f,1.4961919176f,-3.1220249227f,0.0074192334f,-0.0488826698f,6.0019258807f,-0.0752458838f,-0.050627171f,2.0588907919f,0.4518184157f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}

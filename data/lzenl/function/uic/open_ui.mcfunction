@@ -10,7 +10,7 @@ advancement revoke @s only lzenl:crafting
 execute unless block ~ ~ ~ #replaceable run return fail
 execute if block ~ ~-1 ~ #replaceable run return fail
 execute as @s[tag=ui_open] run return fail
-execute at @s positioned ~ ~3 ~ positioned ^ ^ ^3 unless entity @s[distance=..0.1] run return fail
+execute at @s positioned ~ ~-3 ~ positioned ^ ^ ^3 unless entity @s[distance=..0.1] run return fail
 
 
 

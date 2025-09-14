@@ -1,0 +1,29 @@
+{   
+    
+
+"display": {
+        "title": "Wow Dispersion!",
+        "description": "obtain a Amethyst Shard",
+        "icon": {
+            "id": "amethyst_shard",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+        "parent": "lzenl:game/6_gold",
+
+  "criteria": {
+    "amethyst": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:amethyst_shard"
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

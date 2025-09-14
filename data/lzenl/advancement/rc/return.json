@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "requirement": {
+    "z": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {

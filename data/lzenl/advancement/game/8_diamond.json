@@ -1,0 +1,29 @@
+{   
+    
+
+"display": {
+        "title": "Diamond is unbreakable!",
+        "description": "obtain a diamond",
+        "icon": {
+            "id": "diamond",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+        "parent": "lzenl:game/7_crafting",
+
+  "criteria": {
+    "diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond"
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}

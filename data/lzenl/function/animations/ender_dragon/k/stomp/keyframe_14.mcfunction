@@ -1,5 +1,4 @@
 # Dragon created via BDEngine
-
 data merge entity @e[type=item_display,tag=dragon_0,distance=..1,limit=1,sort=nearest] {transformation:[1.7154495729f,0.7651244575f,-0.3701131782f,5.3968921224f,-2.5485043294f,0.5344941361f,0.1959686548f,1.709262494f,0.5616826915f,0.088356285f,2.0195342957f,0.3565111301f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
 data merge entity @e[type=item_display,tag=dragon_1,distance=..1,limit=1,sort=nearest] {transformation:[1.8444742326f,1.7304206455f,-0.4257809657f,5.1578400102f,-2.3101789552f,1.4247796623f,0.1891389117f,3.2469978534f,0.5108698465f,0.1953133469f,2.392559987f,0.1818746091f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
 data merge entity @e[type=item_display,tag=dragon_2,distance=..1,limit=1,sort=nearest] {transformation:[1.6083574625f,1.0354001912f,0.0341146798f,5.2850192371f,-3.6998422195f,0.4186256739f,0.2687004372f,3.4664682355f,0.8602202179f,-0.1353661299f,1.0919071681f,-0.3859078718f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}

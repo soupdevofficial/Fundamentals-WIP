@@ -5,7 +5,7 @@
  # Created by .
 ##
 execute on attacker run damage @s 2
-execute on vehicle run kill @s
+execute on passengers run kill @s
 
 kill @s
 playsound block.stone.break block @a ~ ~ ~ 1 0.5
