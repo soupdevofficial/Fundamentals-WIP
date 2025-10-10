@@ -8,6 +8,32 @@
 kill @e[type=minecraft:armor_stand,distance=..1000]
 kill @e[type=minecraft:area_effect_cloud,distance=..1000]
 
+
+
+scoreboard objectives remove dragon_dmg
+
+bossbar add enderdragon:hp "-={ The Ender Dragon }=-"
+bossbar set enderdragon:hp style notched_20
+bossbar set enderdragon:hp max 999
+bossbar set enderdragon:hp value 999
+bossbar set enderdragon:hp color purple
+bossbar set enderdragon:hp color purple
+bossbar set enderdragon:hp players @a[distance=..500]
+bossbar set enderdragon:hp visible true
+scoreboard objectives add dragon_dmg dummy
+kill @e[tag=dragon,type=slime,distance=..1000,limit=1]
+
+
+scoreboard players set #highest dragon_dmg 0
+tag @a remove target
+tag @p add target
+
+execute at @s as @a[distance=..200] run function lzenl:music/all_souls_hollow/stop
+execute at @s as @a[distance=..200] run function lzenl:music/all_souls_hollow/play
+
+
+
+
 function lzenl:animations/ender_dragon/_/stop
 
 function lzenl:animations/ender_dragon/_/delete

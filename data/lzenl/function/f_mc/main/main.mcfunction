@@ -48,3 +48,5 @@ execute in the_end positioned 0 0 0 run function lzenl:f_mc/main/in_end
 
 #lasso
 execute as @e[type=item,tag=lasso,tag=check] at @s if function lzenl:f_mc/used_items/lead/check_vehicle run function lzenl:f_mc/used_items/lead/check
+
+

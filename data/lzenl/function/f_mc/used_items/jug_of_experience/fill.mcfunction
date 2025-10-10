@@ -5,10 +5,7 @@
  # Created by .
 ##
 
-advancement revoke @s from lzenl:f_mc/used_items/jug_of_experience_fill
-
 execute store result score #temp .data run experience query @s levels
-
 execute if score #temp .data matches 0 run return fail
 
 

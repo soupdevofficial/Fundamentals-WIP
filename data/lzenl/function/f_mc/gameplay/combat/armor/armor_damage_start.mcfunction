@@ -5,8 +5,11 @@
  # Created by .
 ##
 
+execute as @s[tag=dragon,tag=superarmor] run return fail
 
 
+
+data remove storage f_mc:combat data.display.bar
 
 
 execute store result score #armor_resistance .data run attribute @s minecraft:armor_toughness get 0.5
@@ -39,12 +42,3 @@ function lzenl:f_mc/gameplay/combat/armor/display
 
 execute store result score #armor_active .data run attribute @s minecraft:armor get 10
 execute if score #armor_active .data matches ..0 at @s run playsound item.shield.break player @a ~ ~ ~ 10 0 1
-
-
-
-#tellraw @p {text: "\n\n\n\n\n\n\n\n"}
-#tellraw @p {storage: "f_mc:combat", nbt: "data.display.bar", interpret: true}
-
-
-
-

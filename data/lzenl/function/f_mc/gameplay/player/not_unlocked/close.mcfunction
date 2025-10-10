@@ -20,9 +20,3 @@ execute if predicate lzenl:the_end in minecraft:overworld run tp @s ~ ~ ~
 
 
 function lzenl:f_mc/gameplay/player/not_unlocked/tp with storage temp data.pos
-
-
-
-
-
-

@@ -1,9 +1,4 @@
-##
- # place.mcfunction
- # 
- #
- # Created by .
-##
+
 
 
 execute unless items entity @p[tag=user] weapon.mainhand #axes run return fail

@@ -5,7 +5,6 @@
  # Created by .
 ##
 
-advancement revoke @s from lzenl:f_mc/used_items/jug_of_experience_empty
 
 
 

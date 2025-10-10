@@ -1,5 +1,5 @@
 # Dragon created via BDEngine
-
+effect give @n[type=slime,tag=dragon,tag=dragon_hp,distance=..100] resistance 5 10 true
 data merge entity @e[type=item_display,tag=dragon_0,distance=..1,limit=1,sort=nearest] {transformation:[2.8100104709f,0.3287361263f,-0.5356175572f,3.5412976523f,-1.1256034012f,0.8744325773f,0.0219283349f,5.7382009365f,0.7681062012f,0.0787811972f,1.99161724f,0.4755868089f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
 data merge entity @e[type=item_display,tag=dragon_1,distance=..1,limit=1,sort=nearest] {transformation:[2.7865075819f,0.6230204915f,-0.5999986518f,2.4943488997f,-0.8578057158f,2.1560589153f,-0.0024740041f,6.8697229797f,0.7067848681f,0.1604849551f,2.362499047f,0.2002142658f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
 data merge entity @e[type=item_display,tag=dragon_2,distance=..1,limit=1,sort=nearest] {transformation:[3.3473257253f,0.6303240916f,-0.1868617665f,2.5105717774f,-2.1277670857f,0.9228444679f,0.2779116143f,7.1035783373f,1.1329795751f,-0.1291302738f,1.0739985172f,-0.3757781299f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}

@@ -5,6 +5,6 @@
  # Created by .
 ##
 
-
-
-$attribute @s max_health base set $(hp)
+effect clear @s instant_health
+tag @s remove ouchy
+$attribute @s max_health base set $(hp_original)

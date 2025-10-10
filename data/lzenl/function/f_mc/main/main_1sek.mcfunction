@@ -21,7 +21,7 @@ execute as @a at @s run function lzenl:f_mc/main/onplayer_1sek
 execute as @e[type=item_display,tag=rift_item] at @s unless entity @n[type=marker,tag=fd_rift,distance=..21] run kill @s
 
 
-execute as @e[tag=display,type=text_display] unless function lzenl:f_mc/gameplay/combat/vehicle run kill @s
+execute as @e[tag=display,type=text_display] unless function lzenl:check/vehicle run kill @s
 
 execute as @e[type=!#not_mob,tag=armor_dmged] at @s if entity @p[distance=..500] run function lzenl:f_mc/gameplay/combat/armor/regenerate
 

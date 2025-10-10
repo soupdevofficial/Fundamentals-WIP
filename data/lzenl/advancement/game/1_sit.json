@@ -1,7 +1,7 @@
 {
     "display": {
         "title": "Take a Seat",
-        "description": "look straight down and tap [sneak]",
+        "description": "look straight up and tap [sneak]",
         "icon": {
             "id": "saddle",
             "count": 1

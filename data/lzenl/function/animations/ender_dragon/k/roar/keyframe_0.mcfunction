@@ -1,5 +1,5 @@
 # Dragon created via BDEngine
-
+tag @s add comet
 data merge entity @e[type=item_display,tag=dragon_0,distance=..1,limit=1,sort=nearest] {transformation:[2.8069420819f,0.3227548276f,-0.5596996325f,3.4569096255f,-1.1074931612f,0.8765036628f,0.0238420221f,5.8174624594f,0.8047757743f,0.0804791925f,1.984961997f,0.5035024643f,0f,0f,0f,1f],interpolation_duration:0}
 data merge entity @e[type=item_display,tag=dragon_1,distance=..1,limit=1,sort=nearest] {transformation:[2.7826483338f,0.6086962323f,-0.6284055088f,2.4068997328f,-0.8399897102f,2.1600022509f,0f,6.9422501057f,0.7424860518f,0.162416665f,2.3551035575f,0.2126316364f,0f,0f,0f,1f],interpolation_duration:0}
 data merge entity @e[type=item_display,tag=dragon_2,distance=..1,limit=1,sort=nearest] {transformation:[3.3455450681f,0.6265448803f,-0.2013795775f,2.4287255539f,-2.1056316947f,0.9261277676f,0.27952486f,7.1747496502f,1.1786722884f,-0.1239107384f,1.0709515014f,-0.3637244561f,0f,0f,0f,1f],interpolation_duration:0}

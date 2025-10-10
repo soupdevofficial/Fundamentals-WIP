@@ -5,7 +5,6 @@
  # Created by .
 ##
 
-
 scoreboard players remove @s animation 1
 
 execute at @s if score @s animation matches -10.. run rotate @s ~0.8 ~0.1
@@ -24,8 +23,12 @@ execute at @s if score @s animation matches -54..-50 positioned ~ ~-1 ~ position
 execute at @s if score @s animation matches -58..-54 positioned ~ ~-0.75 ~ positioned ^-3.5 ^ ^6.5 run function lzenl:f_mc/boss/enderdragon/beam
 execute at @s if score @s animation matches -60..-58 positioned ~ ~-0.5 ~ positioned ^-4 ^ ^6 run function lzenl:f_mc/boss/enderdragon/beam
 
-
-
+execute at @s if score @s animation matches -40..-4 positioned ~ ~-1 ~ positioned ^ ^ ^7.5 run particle minecraft:flash{color:14495999} ~ ~ ~ 0 0 0 1 0 force @a[distance=..100]
+execute at @s if score @s animation matches -45..-40 positioned ~ ~-1 ~ positioned ^-2 ^ ^7.5 run particle minecraft:flash{color:14495999} ~ ~ ~ 0 0 0 1 0 force @a[distance=..100]
+execute at @s if score @s animation matches -50..-45 positioned ~ ~-0.75 ~ positioned ^-2.5 ^ ^7.5 run particle minecraft:flash{color:14495999} ~ ~ ~ 0 0 0 1 0 force @a[distance=..100]
+execute at @s if score @s animation matches -54..-50 positioned ~ ~-0.75 ~ positioned ^-3 ^ ^7.5 run particle minecraft:flash{color:14495999} ~ ~ ~ 0 0 0 1 0 force @a[distance=..100]
+execute at @s if score @s animation matches -58..-54 positioned ~ ~-0.5 ~ positioned ^-3.5 ^ ^7.5 run particle minecraft:flash{color:14495999} ~ ~ ~ 0 0 0 1 0 force @a[distance=..100]
+execute at @s if score @s animation matches -65..-58 positioned ~ ~-0.5 ~ positioned ^-4 ^ ^7.5 run particle minecraft:flash{color:14495999} ~ ~ ~ 0 0 0 1 0 force @a[distance=..100]
 
 
 

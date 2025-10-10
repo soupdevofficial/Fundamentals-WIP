@@ -20,22 +20,12 @@ advancement revoke @s only lzenl:f_mc/check/interact
  #filled clay mold
  execute as @e[tag=fin,tag=clay_mold,type=interaction,distance=..7] if data entity @s interaction at @s run function lzenl:f_mc/blocks/clay_mold/get
 
-
-
-
-
-
-
 ##
 
 ## Heroes
 
  execute as @e[tag=aurora,type=interaction,distance=..7] if data entity @s interaction run function lzenl:f_mc/gameplay/combat/hero/aurora/find
 
-
-
-
 ##
-
 
 execute as @e[type=interaction,distance=..7] if data entity @s interaction run data remove entity @s interaction

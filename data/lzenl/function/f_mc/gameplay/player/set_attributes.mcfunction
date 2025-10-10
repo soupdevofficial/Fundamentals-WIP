@@ -12,7 +12,6 @@ attribute @s minecraft:attack_speed base set 3.5
 
 execute unless score @s aurora matches 4.. run attribute @s minecraft:max_health base set 6
 
-attribute lzenl minecraft:max_absorption base set -12
 
 
 

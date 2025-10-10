@@ -17,5 +17,5 @@ execute as @e[tag=!dragon,distance=..10] run damage @s 20 mob_attack by @n[tag=d
 execute as @e[tag=!dragon,distance=..15] run damage @s 3 mob_attack by @n[tag=dragon_tp,type=armor_stand,distance=..10]
 
 tp @s ~ ~0.25 ~
-
-
+execute if score @s died matches 13 run summon slime ~ ~100 ~ {NoGravity:1b,Silent:1b,DeathLootTable:"minecraft:empty",NoAI:1b,Health:999f,Size:0,Tags:["boss","dragon_hp","dragon","abyssal","light","magic"],active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:-1,show_particles:0b},{id:"minecraft:resistance",amplifier:2,duration:-1,show_particles:0b},{id:"minecraft:fire_resistance",amplifier:1,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:armor",base:30},{id:"minecraft:explosion_knockback_resistance",base:99},{id:"minecraft:knockback_resistance",base:99},{id:"minecraft:armor_toughness",base:40},{id:"minecraft:max_health",base:999},{id:"minecraft:scale",base:9}]}
+execute if score @s died matches 14 positioned ~ ~100 ~ positioned ^ ^ ^-3 run tp @e[tag=dragon,type=slime,limit=1,distance=..200] ~ ~-100 ~ ~ ~
