@@ -80,6 +80,7 @@ execute if score z_ray .data matches 0 run scoreboard players set z_max .data 21
 
 
 
+scoreboard players set #return .data 0
 
 
 execute at @s anchored eyes positioned ^ ^ ^ align xyz positioned ~0.5 ~0.5 ~0.5 run function lzenl:f_mc/used_items/voxel_traverse/move

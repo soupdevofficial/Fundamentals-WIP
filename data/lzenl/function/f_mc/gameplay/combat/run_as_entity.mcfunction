@@ -4,8 +4,6 @@
  #
  # Created by .
 ##
-tag @s remove delayed_hit
 
-
-
-$execute as @e[nbt={last_hurt_by_mob:$(UUID)}] run function lzenl:f_mc/gameplay/combat/hit
+execute on attacker if entity @s[tag=delayed_hit] run return run tag @s remove delayed_hit
+return fail

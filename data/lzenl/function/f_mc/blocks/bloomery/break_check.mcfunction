@@ -33,4 +33,4 @@ playsound block.decorated_pot.break block @a ~ ~ ~ 5 0
 particle block_crumble{block_state:{Name:"decorated_pot"}} ~ ~0.5 ~ 0.5 0.5 0.5 0.25 20
 
 
-summon item ~ ~ ~ {Item:{id:"wooden_pickaxe",components:{repair_cost:99,"!attribute_modifiers":{},item_name:"Bloomery","!tool":{},max_damage:99,"!weapon":{},consumable:{consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model:"minecraft:decorated_pot"}},Motion:[0.0,0.25,0.0]}
+summon item ~ ~ ~ {Item:{id:"minecraft:brick",count:1,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:1b,type:2}},"minecraft:item_model":"minecraft:decorated_pot","minecraft:item_name":"Bloomery"}}}

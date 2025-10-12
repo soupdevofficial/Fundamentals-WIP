@@ -13,8 +13,8 @@ execute as @e[tag=scale_2] at @s if entity @p[distance=..7] run function lzenl:f
 
 execute as @a[tag=astral_move] run function lzenl:f_mc/gameplay/player/astral/reset
 
-execute as @a[tag=delayed_hit] run function lzenl:f_mc/gameplay/combat/run_as_entity with entity @s
-
+execute if score #htm .data matches 1 as @e if function lzenl:f_mc/gameplay/combat/run_as_entity run function lzenl:f_mc/gameplay/combat/hit
+execute if score #htm .data matches 1 run scoreboard players reset #htm .data
 execute as @a[tag=pl_hit] run function lzenl:f_mc/gameplay/combat/armor/check
 
 execute as @a[tag=reset] run function lzenl:f_mc/gameplay/combat/reset with entity @s

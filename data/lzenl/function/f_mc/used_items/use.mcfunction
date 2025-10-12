@@ -1,4 +1,3 @@
-
 execute if score #used_item .data matches 1 run return run function lzenl:f_mc/used_items/blocks_items/z_1
 execute if score #used_item .data matches 2 run return run function lzenl:f_mc/used_items/blocks_items/z_2
 execute if score #used_item .data matches 3 run return run function lzenl:f_mc/used_items/blocks_items/z_3

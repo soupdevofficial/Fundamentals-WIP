@@ -49,7 +49,7 @@ execute if score #temp .data matches 1 run function lzenl:f_mc/biome/cold
 execute if score #temp .data matches 2 run function lzenl:f_mc/biome/hot
 
 
-execute unless score @s temp matches 49.. unless block ~ ~ ~ water unless block ~ ~1 ~ water run function lzenl:f_mc/gameplay/player/temp/leather_warming
+execute unless score @s temp matches 5.. unless block ~ ~ ~ water unless block ~ ~1 ~ water run function lzenl:f_mc/gameplay/player/temp/leather_warming
 
 
 execute if score @s temp matches 46.. run function lzenl:f_mc/gameplay/player/temp/temp_isburning with storage temp

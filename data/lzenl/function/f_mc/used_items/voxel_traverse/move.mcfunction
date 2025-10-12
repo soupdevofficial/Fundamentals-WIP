@@ -4,8 +4,7 @@
  #
  # Created by .
 ##
-execute positioned ~ ~-1 ~ unless entity @s[distance=..6] run return fail
-
+execute positioned ~ ~-1 ~ unless entity @s[distance=..6] run return run function lzenl:f_mc/used_items/return
 particle end_rod
 execute unless block ~ ~ ~ #air run return run function lzenl:f_mc/used_items/voxel_traverse/hit_start
 

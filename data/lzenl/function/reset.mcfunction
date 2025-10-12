@@ -29,6 +29,7 @@ scoreboard players set #vt_scale .data 1024
 scoreboard players operation #vt_scale2 .data = #vt_scale .data
 scoreboard players operation #vt_scale2 .data *= #vt_scale .data
 scoreboard players set #dmg_max_multi .data 4000
+scoreboard players set #chunk_distance .data 2
 gamerule doLimitedCrafting true
 gamerule snowAccumulationHeight 5
 gamerule maxCommandChainLength 10000

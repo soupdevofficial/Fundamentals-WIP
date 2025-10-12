@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "item_goat": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:goat_horn"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/used_items/blocks_items/z_17"
+  },
+  "sends_telemetry_event": false
+}
