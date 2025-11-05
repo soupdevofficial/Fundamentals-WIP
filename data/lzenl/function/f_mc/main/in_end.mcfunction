@@ -18,3 +18,6 @@ execute as @e[type=block_display,tag=dragon_beam,distance=..1000] at @s run func
 
 execute as @e[type=block_display,tag=dragon_root,scores={animation=4},distance=..1000] at @s run function lzenl:f_mc/boss/enderdragon/enlight
 execute at @e[type=block_display,tag=dragon_root,distance=..1000] run forceload add ~ ~
+
+
+

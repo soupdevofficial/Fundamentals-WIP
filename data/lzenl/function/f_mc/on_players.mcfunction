@@ -7,8 +7,7 @@
 #player set
 execute as @s[tag=!attributes_set] run function lzenl:f_mc/gameplay/player/set_attributes
 
-#player reset temp
-execute as @s[scores={died=1..}] run function lzenl:f_mc/gameplay/player/temp/temp_reset
+
 
 execute as @s[tag=astral] at @s rotated ~ 0 positioned ^ ^ ^-0.5 run function lzenl:f_mc/gameplay/player/astral/body
 

@@ -17,15 +17,16 @@ execute store result score #armor_dmg_prev .data run attribute @s minecraft:armo
 
 
 
-
 execute if score #armor_dmg_prev .data matches ..0 run return run tag @s remove armor_dmged
 
 
 
 attribute @s minecraft:armor modifier remove minecraft:dmg
-execute store result score #armor_max .data run attribute @s minecraft:armor get 2
 scoreboard players remove #armor_dmg_prev .data 100
-
+execute store result score #armor_max_amount .data run attribute @s minecraft:armor get 1
+scoreboard players set #max_armor_dmg .data 100
+scoreboard players operation #max_armor_dmg .data *= #armor_max_amount .data
+execute if score #armor_dmg_prev .data > #max_armor_dmg .data run scoreboard players operation #armor_dmg_prev .data = #max_armor_dmg .data
 
 
 
@@ -33,7 +34,6 @@ scoreboard players remove #armor_dmg_prev .data 100
 
 
 execute store result storage temp macro double -0.01 run scoreboard players operation #armor_dmg_prev .data -= #armor_resistance .data
-scoreboard players remove #armor_max .data 1
 
 
 
@@ -63,8 +63,14 @@ execute if entity @s[type=#abyssal,tag=!boss] run data modify storage f_mc:comba
 
 
 execute if entity @s[tag=!boss] unless data storage f_mc:combat data.display.element run data modify storage f_mc:combat data.display.element set value [{"color":"#999999","text":"[normal] "}]
+scoreboard players set #armor_max .data 3
 
-execute store result score #armor_display .data run attribute @s minecraft:armor get 2
+execute store result score #armor_current .data run attribute @s minecraft:armor get 10
+execute store result score #resist .data run data get entity @s AbsorptionAmount 1
+scoreboard players operation #armor_current .data /= #armor_max_amount .data
+scoreboard players operation #armor_current .data *= #armor_max .data
+scoreboard players operation #armor_display .data = #armor_current .data 
+scoreboard players set #armor_max .data 30
 function lzenl:f_mc/gameplay/combat/armor/display
 
 

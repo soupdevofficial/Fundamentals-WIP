@@ -21,4 +21,4 @@ playsound block.sand.break block @a ~ ~ ~ 3 0
 particle block_crumble{block_state:{Name:"clay"}} ~ ~0.5 ~ 0.5 0.5 0.5 0.25 20
 
 
-summon item ~ ~ ~ {Item:{id:"wooden_pickaxe",components:{repair_cost:99,"!attribute_modifiers":{},item_name:"Dry Bloomery","!tool":{},max_damage:99,"!weapon":{},consumable:{consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model:"minecraft:clay"}},Motion:[0.0,0.25,0.0]}
+summon item ~ ~ ~ {Item:{id:"minecraft:clay_ball",count:1,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:2b,type:2}},"minecraft:item_model":"minecraft:clay","minecraft:item_name":"Dry Bloomery"}}}

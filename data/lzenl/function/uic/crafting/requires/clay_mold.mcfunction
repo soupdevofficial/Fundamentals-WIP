@@ -6,7 +6,7 @@
 ##
 item replace entity @p[distance=..1] player.cursor from entity @n[tag=crafting_ui,type=donkey] horse.10
 
-execute store result score #req1 .data run clear @p[distance=..1] clay_ball 0
+execute store result score #req1 .data run clear @p[distance=..1] clay_ball[!custom_data={}] 0
 
 
 scoreboard players set #return .data 1

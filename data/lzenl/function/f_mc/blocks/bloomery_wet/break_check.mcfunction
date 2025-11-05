@@ -21,5 +21,4 @@ playsound block.mud.break block @a ~ ~ ~ 1 0
 
 particle block_crumble{block_state:{Name:"gray_concrete_powder"}} ~ ~0.5 ~ 0.5 0.5 0.5 0.25 20
 
-
-summon item ~ ~ ~ {Item:{id:"wooden_pickaxe",components:{repair_cost:99,"!attribute_modifiers":{},item_name:"Wet Bloomery","!tool":{},max_damage:99,"!weapon":{},consumable:{consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model:"gray_concrete_powder"}},Motion:[0.0,0.25,0.0]}
+summon item ~ ~ ~ {Item:{id:"minecraft:clay_ball",count:1,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:3b,type:2}},"minecraft:item_model":"minecraft:gray_concrete_powder","minecraft:item_name":"Wet Bloomery"}}}

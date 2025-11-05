@@ -33,12 +33,15 @@
         "on_consume_effects": []
       },
       "minecraft:use_cooldown": {
-        "seconds": 60,
+        "seconds": 30,
         "cooldown_group": "recall_compass"
       },
       "minecraft:custom_data": {
               "return": true,
-              "recall_compass": true
+              "item":{
+                "id":16,
+                "type":1
+              }
             }
     }
   }

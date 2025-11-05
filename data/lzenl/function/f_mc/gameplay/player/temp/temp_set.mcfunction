@@ -4,6 +4,7 @@
  #
  # Created by .
 ##
+execute as @s[scores={died=1..}] run return run function lzenl:f_mc/gameplay/player/temp/temp_reset
 
 scoreboard players set #temp .data 0
 execute store result storage temp id int 1 run scoreboard players get @s .id
@@ -50,6 +51,8 @@ execute if score #temp .data matches 2 run function lzenl:f_mc/biome/hot
 
 
 execute unless score @s temp matches 5.. unless block ~ ~ ~ water unless block ~ ~1 ~ water run function lzenl:f_mc/gameplay/player/temp/leather_warming
+
+execute at @s if predicate lzenl:the_nether run scoreboard players set @s temp 666
 
 
 execute if score @s temp matches 46.. run function lzenl:f_mc/gameplay/player/temp/temp_isburning with storage temp

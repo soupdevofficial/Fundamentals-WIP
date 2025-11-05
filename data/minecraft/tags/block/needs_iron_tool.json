@@ -1,0 +1,46 @@
+{
+  "values": [
+    "minecraft:diamond_block",
+    "minecraft:emerald_block",
+    "nether_quartz_ore",
+
+    "smooth_quartz_slab",
+    "smooth_quartz_stairs",
+    "quartz_block",
+    "quartz_bricks",
+    "quartz_pillar",
+    "quartz_slab",
+    "quartz_stairs",
+    "chiseled_quartz_block",
+
+    "minecraft:diamond_ore",
+    "minecraft:emerald_ore",
+
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_emerald_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:deepslate_redstone_ore",
+    "minecraft:deepslate_coal_ore",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:deepslate_copper_ore",
+
+    "minecraft:deepslate",
+    "minecraft:polished_deepslate_slab",
+    "minecraft:polished_deepslate_stairs",
+    "minecraft:polished_deepslate",
+    "minecraft:polished_deepslate_wall",
+    "minecraft:deepslate_brick_slab",
+    "minecraft:deepslate_brick_stairs",
+    "minecraft:deepslate_bricks",
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:deepslate_brick_wall",
+    "minecraft:deepslate_tile_slab",
+    "minecraft:deepslate_tile_stairs",
+    "minecraft:deepslate_tiles",
+    "minecraft:cracked_deepslate_tiles",
+    "minecraft:deepslate_tile_wall",
+    "infested_deepslate"
+  ],
+  "replace": true
+}

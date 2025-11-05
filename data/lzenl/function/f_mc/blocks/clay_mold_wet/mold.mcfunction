@@ -22,7 +22,7 @@ execute if score @s .data matches 7 on vehicle on passengers run function lzenl:
 execute if score @s .data matches 8 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/ingot
 execute if score @s .data matches 9 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/standart
 
-playsound minecraft:block.mud.step block @a ~ ~ ~ 3 0
+playsound minecraft:block.mud.step block @a ~ ~ ~ 0.5 0
 
 
 

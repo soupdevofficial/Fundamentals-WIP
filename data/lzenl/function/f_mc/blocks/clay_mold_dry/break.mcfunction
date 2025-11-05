@@ -5,15 +5,19 @@
  # Created by .
 ##
 
+execute store result score #return .data run scoreboard players get @n[tag=dry_clay_mold,type=interaction,distance=..0.5] .data
 
 
-execute unless score @s .data matches 1..8 run summon item ~ ~ ~ {Tags:["set_data"],Item:{id:"wooden_pickaxe",components:{repair_cost:99,"!attribute_modifiers":{},item_name:"Dry Clay Mold","!tool":{},max_damage:99,"!weapon":{},consumable:{consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model:"minecraft:light_gray_carpet"}},Motion:[0.0,0.25,0.0]}
+execute if score #return .data matches 1 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:1},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Sword]"}}}
+execute if score #return .data matches 2 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:2},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Axe]"}}}
+execute if score #return .data matches 3 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:3},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Pickaxe]"}}}
+execute if score #return .data matches 4 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:4},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Hoe]"}}}
+execute if score #return .data matches 5 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:5},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Small Shears]"}}}
+execute if score #return .data matches 6 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:6},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Small Hammer]"}}}
+execute if score #return .data matches 7 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:7},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Small Saw]"}}}
+execute if score #return .data matches 8 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:8},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Ingot]"}}}
 
-execute if score @s .data matches 1..8 run summon item ~ ~ ~ {Tags:["set_data"],Item:{id:"wooden_pickaxe",components:{repair_cost:99,"!attribute_modifiers":{},item_name:"Dry Clay Mold [shaped]","!tool":{},max_damage:99,"!weapon":{},consumable:{consume_seconds:0.0,animation:"block",sound:"minecraft:intentionally_empty",has_consume_particles:false,on_consume_effects:[]},item_model:"minecraft:light_gray_carpet"}},Motion:[0.0,0.25,0.0]}
-
-
-
-execute as @n[tag=set_data,distance=..1,type=item] run execute store result entity @s Item.components.minecraft:custom_data.id int 1 run scoreboard players get @n[tag=dry_clay_mold,type=interaction,distance=..0.5] .data
+execute unless score @s .data matches 1..8 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",count:1,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:9},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold"}}}
 
 
 

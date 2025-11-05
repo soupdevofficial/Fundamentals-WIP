@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:iron_block",
+    "minecraft:iron_ore",
+    "minecraft:redstone_block",
+    "minecraft:redstone_ore"
+  ],
+  "replace": true
+}

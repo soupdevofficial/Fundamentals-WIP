@@ -4,19 +4,19 @@ execute align xyz run summon block_display ~0.5 ~ ~0.5 {Tags:[bloomery_dry],Pass
 schedule function lzenl:f_mc/delayed_conditional 2t
 
 
-execute store result score .temp .data run data get entity @p Rotation[0]
+execute store result score #temp .data run data get entity @s Rotation[0]
 
-execute if score .temp .data matches -45..45 as @e[type=item_display,tag=bloomery_dry_part,distance=..0.5] run rotate @s -90 0
+execute if score #temp .data matches -45..45 as @e[type=item_display,tag=bloomery_dry_part,distance=..1] run rotate @s -90 0
 
-execute if score .temp .data matches 46..135 as @e[type=item_display,tag=bloomery_dry_part,distance=..0.5] run rotate @s 0 0
+execute if score #temp .data matches 46..135 as @e[type=item_display,tag=bloomery_dry_part,distance=..1] run rotate @s 0 0
 
-execute if score .temp .data matches 136..180 as @e[type=item_display,tag=bloomery_dry_part,distance=..0.5] run rotate @s 90 0
+execute if score #temp .data matches 136..180 as @e[type=item_display,tag=bloomery_dry_part,distance=..1] run rotate @s 90 0
 
-execute if score .temp .data matches -180..-136 as @e[type=item_display,tag=bloomery_dry_part,distance=..0.5] run rotate @s 90 0
+execute if score #temp .data matches -180..-136 as @e[type=item_display,tag=bloomery_dry_part,distance=..1] run rotate @s 90 0
 
-execute if score .temp .data matches -135..-46 as @e[type=item_display,tag=bloomery_dry_part,distance=..0.5] run rotate @s 180 0
+execute if score #temp .data matches -135..-46 as @e[type=item_display,tag=bloomery_dry_part,distance=..1] run rotate @s 180 0
 
-scoreboard players reset .temp .data
+scoreboard players reset #temp .data
 
 playsound minecraft:block.sponge.place block @a ~ ~ ~ 4 0.65
 return fail

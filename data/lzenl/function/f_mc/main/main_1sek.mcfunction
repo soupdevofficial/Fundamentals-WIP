@@ -7,7 +7,6 @@
 schedule function lzenl:f_mc/main/main_1sek 1s replace
 schedule function lzenl:f_mc/main/main_1min 60s append
 
-execute as @a at @s if predicate lzenl:the_nether run scoreboard players set @s temp 666
 
 execute as @e[type=armor_stand,tag=clay_bucket] at @s if entity @p[distance=..7] run tag @s remove picked
 execute as @e[type=donkey,tag=bloomery_ui] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/bloomery/melting

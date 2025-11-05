@@ -5,6 +5,8 @@
  # Created by .
 ##
 advancement revoke @s only lzenl:f_mc/used_items/root
+scoreboard players set #used .data 0
+
 # 19 ids
 function lzenl:f_mc/used_items/id_get
 

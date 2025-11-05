@@ -29,7 +29,7 @@ execute if score @s .data matches 1 run return run summon item ~ ~0.1 ~ {PickupD
 execute if score @s .data matches 2 run return run summon item ~ ~0.1 ~ {PickupDelay:8,Motion:[0.0,0.25,0.0],Item:{id:"minecraft:copper_axe"}}
 #axe
 
-execute if score @s .data matches 3 run return run summon item ~ ~0.1 ~ {PickupDelay:8,Motion:[0.0,0.25,0.0],Item:{id:"minecraft:copper_pickaxe",components:{tool:{default_mining_speed:5,rules:[{correct_for_drops:true,blocks:"#copper_ores"},{correct_for_drops:true,blocks:"#coal_ores"},{correct_for_drops:true,blocks:"#base_stone_overworld"},{correct_for_drops:true,blocks:"#gold_ores"},{correct_for_drops:true,blocks:"#redstone_ores"},{correct_for_drops:true,blocks:"#lapis_ores"},{correct_for_drops:true,blocks:"#iron_ores"}]}}}}
+execute if score @s .data matches 3 run return run summon item ~ ~0.1 ~ {PickupDelay:8,Motion:[0.0,0.25,0.0],Item:{id:"minecraft:copper_pickaxe"}}
 #pickaxe
 
 
