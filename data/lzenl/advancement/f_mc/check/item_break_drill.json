@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "item_destroyed": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability":0,
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "item": {
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lzenl:f_mc/used_items/blocks_items/z_r18"
+  },
+  "sends_telemetry_event": false
+}

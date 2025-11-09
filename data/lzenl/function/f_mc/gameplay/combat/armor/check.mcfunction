@@ -104,12 +104,13 @@ scoreboard players operation #dmg_original .data -= #dmg .data
 
 scoreboard players set #dmg_display .data 10000
 scoreboard players operation #dmg_display .data += #dmg .data
+execute as @s[tag=!vul] if score #armor_active .data matches 1.. run function lzenl:f_mc/gameplay/combat/armor/armor_damage_start
 
 
 execute if score #resist .data matches 1.. run data modify storage temp data.text[0].text set value "🛡 "
 execute if score #resist .data matches 1.. store result storage temp data.text[1].text float 1 run scoreboard players get #dmg_absorbed .data
 execute unless score #resist .data matches 1.. store result storage temp data.text[1].text float 0.0001 run scoreboard players get #dmg_display .data
-data modify storage minecraft:temp data.text[1].text set string storage minecraft:temp data.text[1].text 0 3
+data modify storage minecraft:temp data.text[1].text set string storage minecraft:temp data.text[1].text 0 -1
 execute at @s run function lzenl:f_mc/gameplay/combat/dmg_indicator with storage temp data
 
 
@@ -119,7 +120,6 @@ scoreboard players reset @s dmg_taken_absorbed
 
 
 
-execute as @s[tag=!vul] if score #armor_active .data matches 1.. run function lzenl:f_mc/gameplay/combat/armor/armor_damage_start
 execute as @s[tag=!boss] if score #armor_active .data matches 0 run data remove storage f_mc:combat data.display.bar
 execute if score #armor_active .data matches ..0 at @s[tag=dragon,tag=!res,tag=!vul,tag=!superarmor] run tag @s add downed
 

@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XX ",
+    "XFC",
+    " CC"
+  ],
+  "key": {
+    "X": "minecraft:netherite_ingot",
+    "C": "minecraft:cobbled_deepslate",
+    "F": "minecraft:blast_furnace"
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "!minecraft:food": {},
+      "minecraft:custom_data": {
+        "return": true,
+        "item": {
+          "id": 18,
+          "type": 1,
+          "drill": 4
+        }
+      },
+      "minecraft:item_model": "minecraft:player_head",
+      "minecraft:damage": 3200,
+      "minecraft:max_damage": 3200,
+      "minecraft:item_name": "Netherite Drill",
+      "minecraft:consumable": {
+        "consume_seconds": 0,
+        "animation": "none",
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:profile": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MjcwNDQ2ODE0MCwKICAicHJvZmlsZUlkIiA6ICJkOTcwYzEzZTM4YWI0NzlhOTY1OGM1ZDQ1MjZkMTM0YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJDcmltcHlMYWNlODUxMjciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTg4MzkzZjI1OGFmOWNlY2E3ZDUzNDVmMjljZWQ1NGYxYjE2MjJmMzQxODY4OGY5ODI1ZGJmNDg1YmIzZWI0ZSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+          }
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "-",
+          "color": "black"
+        },
+        {
+          "text": "Hold [",
+          "extra": [
+            {"keybind": "key.use",
+              "type": "keybind"},
+              "] to Refill"
+          ],
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "damage_resistant":
+      {
+        "types":
+      "#minecraft:is_fire"
+    }
+    }
+  },
+  "show_notification": true
+}

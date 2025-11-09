@@ -16,5 +16,6 @@ execute if score #used_item .data matches 13 run return run function lzenl:f_mc/
 execute if score #used_item .data matches 14 run return run function lzenl:f_mc/used_items/blocks_items/z_14
 execute if score #used_item .data matches 15 run return run function lzenl:f_mc/used_items/blocks_items/z_15
 execute if score #used_item .data matches 16 run return run function lzenl:f_mc/used_items/blocks_items/z_16
+execute if score #used_item .data matches 18 run return run function lzenl:f_mc/used_items/blocks_items/z_18
 
 scoreboard players set #used .data 0

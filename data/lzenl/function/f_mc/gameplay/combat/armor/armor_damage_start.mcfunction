@@ -14,7 +14,8 @@ scoreboard players operation #timer_delta .data = #timer .data
 scoreboard players operation #timer_delta .data -= #timer_old .data
 execute if score #timer_delta .data matches ..-1 run scoreboard players operation #timer_delta .data *= #vt_-1 .data
 
-execute if score #timer_delta .data < #cooldown .data run return fail
+execute if score #timer_delta .data < #cooldown .data run return run data modify storage temp data.text[0].text set value "🛡 "
+
 scoreboard players set #cooldown .data 2000
 execute on attacker store result score #attack_speed .data run attribute @s minecraft:attack_speed get 100
 scoreboard players operation #cooldown .data /= #attack_speed .data

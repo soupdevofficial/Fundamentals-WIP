@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XX ",
+    "XFC",
+    " CC"
+  ],
+  "key": {
+    "X": "minecraft:copper_ingot",
+    "F": "minecraft:furnace",
+    "C": "minecraft:cobblestone"
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "!minecraft:food": {},
+      "minecraft:custom_data": {
+        "return": true,
+        "item": {
+          "id": 18,
+          "type": 1,
+          "drill": 1
+        }
+      },
+      "minecraft:item_model": "minecraft:player_head",
+      "minecraft:damage": 1280,
+      "minecraft:max_damage": 1280,
+      "minecraft:item_name": "Copper Drill",
+      "minecraft:consumable": {
+        "consume_seconds": 0,
+        "animation": "none",
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:profile": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MjcwMzYwODA0MSwKICAicHJvZmlsZUlkIiA6ICIzOThiZGM3NWVhYzQ0ZjMzYWEyMDBiMTYyNTRmMDhlOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJJa2h3YW4wNTEwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2MzNDAwMWQ0MTBhNWVlMGYwYTZlOWNiYzYxMTYyNDc2OTZkMjM4ZmQ5M2Q0MzNmMDYzNTNiZDM2MGEzMmExYzAiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+          }
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "-",
+          "color": "black"
+        },
+        {
+          "text": "Hold [",
+          "extra": [
+            {"keybind": "key.use",
+              "type": "keybind"},
+              "] to Refill"
+          ],
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  },
+  "show_notification": true
+}

@@ -22,3 +22,5 @@ execute as @s[tag=nbs_allsoulsho] at @s run function lzenl:music/all_souls_hollo
 
 
 clear @s *[item_name="execute"]
+
+

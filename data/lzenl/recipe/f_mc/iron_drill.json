@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XX ",
+    "XFC",
+    " CC"
+  ],
+  "key": {
+    "X": "minecraft:iron_ingot",
+    "F": "minecraft:furnace",
+    "C": "minecraft:cobblestone"
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "!minecraft:food": {},
+      "minecraft:custom_data": {
+        "return": true,
+        "item": {
+          "id": 18,
+          "type": 1,
+          "drill": 2
+        }
+      },
+      "minecraft:item_model": "minecraft:player_head",
+      "minecraft:damage": 1920,
+      "minecraft:max_damage": 1920,
+      "minecraft:item_name": "Iron Drill",
+      "minecraft:consumable": {
+        "consume_seconds": 0,
+        "animation": "none",
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:profile": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MjcwMzkzNDk3MSwKICAicHJvZmlsZUlkIiA6ICIyYmQyZTAxNGI5YWE0YzRjYmRmMzdmZjc5MzE2NDE5MSIsCiAgInByb2ZpbGVOYW1lIiA6ICJBdXRvU2tpbiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yZWZjNzUzZThjOTk1M2E0MGIyNmEzMzRiOTQ1OTU1NTkzNzhhYjQzZmIxMWQ5ZWMzMzAwZDIxZTQ3MDM1NDY3IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+          }
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "-",
+          "color": "black"
+        },
+        {
+          "text": "Hold [",
+          "extra": [
+            {"keybind": "key.use",
+              "type": "keybind"},
+              "] to Refill"
+          ],
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  },
+  "show_notification": true
+}
