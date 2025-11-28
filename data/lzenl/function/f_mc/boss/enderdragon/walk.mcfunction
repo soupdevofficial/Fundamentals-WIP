@@ -4,7 +4,7 @@
  #
  # Created by .
 ##
-execute as @e[tag=dragon,type=block_display,distance=..1] anchored eyes facing entity @p[distance=6..,tag=target] eyes positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^5 facing entity @s eyes facing ^ ^ ^-1 positioned as @s rotated ~ 0 run rotate @s ~ ~
+execute as @e[tag=dragon,type=block_display,distance=..1] anchored eyes facing entity @p[distance=6..,tag=target] eyes positioned ^ ^ ^3 rotated as @s positioned ^ ^ ^5 facing entity @s eyes facing ^ ^ ^-1 positioned as @s rotated ~ 0 run rotate @s ~ ~
 execute as @e[tag=dragon,type=block_display,distance=..1] on passengers run rotate @s ~90 0
 schedule function lzenl:f_mc/boss/enderdragon/walking 1.5s append
 

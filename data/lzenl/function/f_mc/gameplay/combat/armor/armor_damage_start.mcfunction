@@ -7,28 +7,27 @@
 
 execute as @s[tag=dragon,tag=superarmor] run return fail
 
-scoreboard players operation #timer_old .data = #timer .data
+scoreboard players operation @s weapon.timer_old = #timer .data
 execute store result score #timer .data run time query gametime
-scoreboard players operation #timer_delta .data = #timer .data
+scoreboard players operation @s weapon.timer_delta = #timer .data
 
-scoreboard players operation #timer_delta .data -= #timer_old .data
-execute if score #timer_delta .data matches ..-1 run scoreboard players operation #timer_delta .data *= #vt_-1 .data
+scoreboard players operation @s weapon.timer_delta -= @s weapon.timer_old
+execute if score @s weapon.timer_delta matches ..-1 run scoreboard players operation @s weapon.timer_delta *= #vt_-1 .data
 
-execute if score #timer_delta .data < #cooldown .data run return run data modify storage temp data.text[0].text set value "🛡 "
+execute if score @s weapon.timer_delta < @s weapon.cooldown run return run data modify storage temp data.text[0].text set value "# "
 
-scoreboard players set #cooldown .data 2000
+scoreboard players set @s weapon.cooldown 2000
+
 execute on attacker store result score #attack_speed .data run attribute @s minecraft:attack_speed get 100
-scoreboard players operation #cooldown .data /= #attack_speed .data
+scoreboard players operation @s weapon.cooldown /= #attack_speed .data
 
-
-
-
+execute if score @s weapon.cooldown matches 100.. run scoreboard players set @s weapon.cooldown 20
 
 
 data remove storage f_mc:combat data.display.bar
 
 execute store result score #armor_resistance .data run attribute @s minecraft:armor_toughness get 4
-scoreboard players add #armor_resistance .data 2
+scoreboard players add #armor_resistance .data 4
 
 execute store result score #armor_dmg_prev .data run attribute @s minecraft:armor modifier value get dmg -1000
 
@@ -38,7 +37,7 @@ attribute @s minecraft:armor modifier remove dmg
 
 scoreboard players set #armor_dmg .data 10000
 scoreboard players operation #armor_dmg .data += #dmg .data
-scoreboard players operation #armor_dmg .data *= #cooldown .data
+scoreboard players operation #armor_dmg .data *= @s weapon.cooldown
 execute store result score #armor_max_amount .data run attribute @s minecraft:armor get 1
 
 

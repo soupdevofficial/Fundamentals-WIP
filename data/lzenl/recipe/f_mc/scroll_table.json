@@ -16,12 +16,20 @@
     "id": "minecraft:stone_pickaxe",
     "components": {
       "minecraft:item_name": "Scroll Table",
-            "minecraft:consumable": {
+
+      "minecraft:consumable": {
         "consume_seconds": 0,
         "animation": "none",
         "sound": "intentionally_empty",
         "has_consume_particles": false
-          },
+        },
+      "minecraft:custom_data":{
+          "item":{
+            "type":2,"id":12
+          }
+
+
+        },
             "item_model": "enchanting_table",
             "!minecraft:tool": {},
             "!attribute_modifiers": {}

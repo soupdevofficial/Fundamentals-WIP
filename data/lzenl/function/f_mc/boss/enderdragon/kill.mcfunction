@@ -1,0 +1,6 @@
+##
+ # kill.mcfunction
+ # 
+ #
+ # Created by .
+##

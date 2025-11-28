@@ -22,6 +22,6 @@ execute as @a[distance=..50,tag=!dragon] at @s run function lzenl:f_mc/gameplay/
 
 
 
-execute at @s positioned ^ ^30 ^-28 as @e[distance=..40,tag=!dragon,type=!block_display,type=!item] run damage @s 5 minecraft:dragon_breath by @n[type=slime,tag=dragon,distance=..240]
+execute at @s positioned ^ ^30 ^-28 as @e[distance=..40,tag=!dragon,type=!#not_mob] run damage @s 5 minecraft:dragon_breath by @n[type=slime,tag=dragon,distance=..240]
 
 

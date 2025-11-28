@@ -26,6 +26,8 @@ scoreboard players remove #armor_dmg_prev .data 100
 execute store result score #armor_max_amount .data run attribute @s minecraft:armor get 1
 scoreboard players set #max_armor_dmg .data 100
 scoreboard players operation #max_armor_dmg .data *= #armor_max_amount .data
+
+
 execute if score #armor_dmg_prev .data > #max_armor_dmg .data run scoreboard players operation #armor_dmg_prev .data = #max_armor_dmg .data
 
 

@@ -1,5 +1,5 @@
 # Dragon created via BDEngine
-
+execute anchored eyes positioned ^5 ^ ^ rotated ~180 ~ run function lzenl:f_mc/boss/enderdragon/swipe_attack_l
 data merge entity @e[type=item_display,tag=dragon_0,distance=..1,limit=1,sort=nearest] {transformation:[0.3327509028f,0.6764517641f,-1.4109898714f,3.3117235606f,-2.8713835022f,0.3125978034f,0.4299987392f,1.9115654556f,1.182185527f,0.5688601534f,1.4415668271f,3.5248708984f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
 data merge entity @e[type=item_display,tag=dragon_1,distance=..1,limit=1,sort=nearest] {transformation:[0.8389440646f,1.504170257f,-1.6797149079f,3.4702154373f,-2.3266584052f,1.3058810496f,0.6052831703f,3.5427700228f,1.697890904f,1.0462535649f,1.6593963848f,3.1520492164f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
 data merge entity @e[type=item_display,tag=dragon_2,distance=..1,limit=1,sort=nearest] {transformation:[0.2344128006f,0.9769437496f,-0.5541829731f,3.9307554719f,-3.6200587593f,0.3135426224f,0.4388358953f,3.6573288623f,1.9636318947f,0.4614075575f,0.8751738623f,2.7501812047f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}

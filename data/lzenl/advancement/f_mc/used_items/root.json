@@ -1,6 +1,7 @@
 {
   "criteria": {
-    "item_used_root": {
+
+    "used_root": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
@@ -11,9 +12,30 @@
           }
         }
       }
+    },
+
+
+    "used_return": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "return": true
+            }
+          }
+        }
+      }
     }
   },
+  "requirements": [
+    [
+      "used_root",
+      "used_return"
+    ]
+
+  ],
   "rewards": {
-    "function": "lzenl:f_mc/used_items/root"
+    "function": "lzenl:f_mc/used_items/dispatcher"
   }
 }

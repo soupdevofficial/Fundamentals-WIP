@@ -18,8 +18,12 @@ bossbar set enderdragon:hp max 999
 bossbar set enderdragon:hp value 999
 bossbar set enderdragon:hp color purple
 bossbar set enderdragon:hp color purple
-bossbar set enderdragon:hp players @a[distance=..500]
 bossbar set enderdragon:hp visible true
+
+bossbar set enderdragon:hp players @a[distance=..500]
+execute at @s as @a[distance=..200] run function lzenl:music/all_souls_hollow/stop
+execute at @s as @a[distance=..200] run function lzenl:music/all_souls_hollow/play
+
 scoreboard objectives add dragon_dmg dummy
 kill @e[tag=dragon,type=slime,distance=..1000,limit=1]
 
@@ -28,8 +32,7 @@ scoreboard players set #highest dragon_dmg 0
 tag @a remove target
 tag @p add target
 
-execute at @s as @a[distance=..200] run function lzenl:music/all_souls_hollow/stop
-execute at @s as @a[distance=..200] run function lzenl:music/all_souls_hollow/play
+
 
 
 

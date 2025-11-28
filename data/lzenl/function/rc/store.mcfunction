@@ -4,6 +4,8 @@
  #
  # Created by .
 ##
+
+
 data remove storage minecraft:temp data
 data remove storage temp data.temp.slotoff
 data modify storage temp data.temp.slot0 set from entity @s Inventory[{Slot:0b}]

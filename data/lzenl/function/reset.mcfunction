@@ -14,7 +14,15 @@ scoreboard objectives add active dummy
 scoreboard objectives add element dummy
 scoreboard objectives add animation dummy
 scoreboard objectives add aurora dummy
+
+
+
 scoreboard objectives add weapon.cooldown dummy
+scoreboard objectives add weapon.timer_delta dummy
+scoreboard objectives add weapon.timer_old dummy
+
+
+
 
 scoreboard objectives add dmg_dealt minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add dmg_taken minecraft.custom:minecraft.damage_taken
