@@ -5,5 +5,5 @@
  # Created by .
 ##
 
-execute on attacker if entity @s[tag=delayed_hit] run return run tag @s remove delayed_hit
+execute on attacker if entity @s[tag=attacker_prev] run return 1
 return fail

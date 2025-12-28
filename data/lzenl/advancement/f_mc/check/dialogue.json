@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "dialogue": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "lzenl:dialogue/technical/read"
+  },
+  "sends_telemetry_event": false
+}

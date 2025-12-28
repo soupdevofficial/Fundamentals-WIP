@@ -8,7 +8,7 @@
 
 
 
-clear @p[distance=..1] string 3
+clear @p[distance=..1,gamemode=!creative] string 3
 
 
 

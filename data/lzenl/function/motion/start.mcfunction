@@ -9,6 +9,10 @@ execute store result score #motion_y temp run data get entity @s Pos[1] 1000
 execute store result score #motion_z temp run data get entity @s Pos[2] 1000
 execute rotated as @p run tp @s[tag=motion] ^ ^ ^2
 execute rotated as @p run tp @s[tag=motion2] ^ ^ ^3
+
+
+
+
 execute store result score #motion_x2 temp run data get entity @s Pos[0] 1000
 execute store result score #motion_y2 temp run data get entity @s Pos[1] 1000
 execute store result score #motion_z2 temp run data get entity @s Pos[2] 1000

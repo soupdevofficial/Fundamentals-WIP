@@ -61,6 +61,10 @@
 		  {
 			"namespace": "^minecraft$",
 			"path": "^recipe/wooden_.*\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^loot_table/gameplay/fishing.*\\.json$"
 		  }
 		  
 		]

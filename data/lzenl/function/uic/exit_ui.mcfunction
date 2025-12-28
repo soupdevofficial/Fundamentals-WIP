@@ -1,9 +1,3 @@
-##
- # exit_ui.mcfunction
- # 
- #
- # Created by .
-##
 tag @s remove ui_open
 attribute @s movement_speed modifier remove ui_open
 attribute @s jump_strength modifier remove ui_open

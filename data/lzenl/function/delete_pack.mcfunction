@@ -12,6 +12,8 @@ scoreboard objectives remove dmg_taken
 scoreboard objectives remove died
 scoreboard objectives remove nbs_allsoulsho
 scoreboard objectives remove nbs_allsoulsho_t
+scoreboard objectives remove fishing
+
 team remove noCollision
 data remove storage f_mc:combat data
 data remove storage f_mc:worldgen data
@@ -25,4 +27,5 @@ data remove storage minecraft:temp id
 data remove storage minecraft:temp Rotation
 data remove storage minecraft:temp hand
 say Datapack: Fundamentals removed!
+
 datapack disable "file/Fundamentals"

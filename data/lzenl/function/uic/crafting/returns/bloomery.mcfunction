@@ -4,7 +4,7 @@
  #
  # Created by .
 ##
-clear @p[distance=..1] clay_ball 36
+clear @p[distance=..1,gamemode=!creative] clay_ball 36
 
 playsound minecraft:entity.villager.work_leatherworker master @a[distance=..10] ~ ~ ~ 1 1.5
 

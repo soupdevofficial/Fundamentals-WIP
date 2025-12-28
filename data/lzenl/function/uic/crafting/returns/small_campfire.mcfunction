@@ -4,7 +4,7 @@
  #
  # Created by .
 ##
-clear @p[distance=..1] minecraft:wooden_pickaxe[minecraft:item_name="Brittle Stick"] 6
+clear @p[distance=..1,gamemode=!creative] minecraft:wooden_pickaxe[minecraft:item_name="Brittle Stick"] 6
 
 playsound minecraft:block.bamboo_wood_door.open player @a[distance=..10] ~ ~ ~ 5 2
 

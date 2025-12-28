@@ -7,11 +7,11 @@
 
 
 
-clear @p[distance=..1] minecraft:wooden_pickaxe[minecraft:item_name="Small Stone Pebble"] 2
+clear @p[distance=..1,gamemode=!creative] minecraft:wooden_pickaxe[minecraft:item_name="Small Stone Pebble"] 2
 
-clear @p[distance=..1] string 4
+clear @p[distance=..1,gamemode=!creative] string 4
 
-clear @p[distance=..1] minecraft:wooden_pickaxe[minecraft:item_name="Wooden Handle"] 1
+clear @p[distance=..1,gamemode=!creative] minecraft:wooden_pickaxe[minecraft:item_name="Wooden Handle"] 1
 
 
 

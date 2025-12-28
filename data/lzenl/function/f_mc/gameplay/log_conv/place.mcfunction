@@ -1,3 +1,0 @@
-
-$fill ~ ~ ~ ~ ~ ~ stripped_$(log)
-

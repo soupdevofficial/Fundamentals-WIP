@@ -4,7 +4,7 @@
  #
  # Created by .
 ##
-item replace entity @p[distance=..1] player.cursor from entity @n[tag=crafting_ui,type=donkey] horse.7
+item replace entity @p[distance=..1] player.cursor from entity @n[tag=crafting_ui,type=donkey] horse.5
 
 
 execute store result score #req1 .data run clear @p[distance=..1] minecraft:wooden_pickaxe[minecraft:item_name="Small Stone Pebble"] 0

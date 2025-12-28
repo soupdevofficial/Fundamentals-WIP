@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "fish_loop": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "lzenl:fishing/reel_tp"
+  },
+  "sends_telemetry_event": false
+}

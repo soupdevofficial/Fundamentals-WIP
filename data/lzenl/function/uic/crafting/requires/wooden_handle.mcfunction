@@ -1,4 +1,4 @@
-item replace entity @p[distance=..1] player.cursor from entity @n[tag=crafting_ui,type=donkey] horse.3
+item replace entity @p[distance=..1] player.cursor from entity @n[tag=crafting_ui,type=donkey] horse.5
 execute store result score #req1 .data run clear @p[distance=..1] stick 0
 execute store result score #req2 .data run clear @p[distance=..1] leather 0
 execute store result score #req3 .data run clear @p[distance=..1] string 0

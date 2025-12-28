@@ -7,6 +7,11 @@
 
 advancement revoke @s only lzenl:f_mc/check/attacks
 
+
+## fishing
+ execute as @e[tag=fishing.reel,type=interaction,distance=..10] if data entity @s attack at @s run function lzenl:fishing/reel
+## 
+
 ## Blocks
 
  #sticks

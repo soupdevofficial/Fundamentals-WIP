@@ -16,11 +16,11 @@ scoreboard players set #season_hot_min temp 35
 scoreboard players set #season_cold_min temp 15
 scoreboard players set #season_cold_max temp 5
 
-gamerule randomTickSpeed 3
+gamerule random_tick_speed 3
 
 
 
 weather clear
-gamerule doWeatherCycle false
+gamerule minecraft:advance_weather false
 
 title @a title {"text":"-[ summer ]-","color":"gold"}

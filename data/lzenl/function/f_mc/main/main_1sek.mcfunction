@@ -7,6 +7,8 @@
 schedule function lzenl:f_mc/main/main_1sek 1s replace
 schedule function lzenl:f_mc/main/main_1min 60s append
 
+#fishing
+execute as @e[tag=fishing,type=armor_stand] at @s run function lzenl:fishing/check
 
 execute as @e[type=armor_stand,tag=clay_bucket] at @s if entity @p[distance=..7] run tag @s remove picked
 execute as @e[type=donkey,tag=bloomery_ui] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/bloomery/melting
@@ -27,3 +29,5 @@ execute as @e[type=!#not_mob,tag=armor_dmged] at @s if entity @p[distance=..500]
 execute as @e[type=block_display,tag=dark_crystal] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/dark_crystal/active
 
 function lzenl:f_mc/boss/leviathan/move
+
+execute as @a[scores={fmc.info=1..}] run function lzenl:f_mc/info

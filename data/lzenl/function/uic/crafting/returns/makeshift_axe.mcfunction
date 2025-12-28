@@ -4,9 +4,9 @@
  #
  # Created by .
 ##
-clear @p[distance=..1] string 2
-clear @p[distance=..1] minecraft:wooden_pickaxe[minecraft:item_name="Brittle Stick"] 1
-clear @p[distance=..1] minecraft:wooden_pickaxe[minecraft:item_name="Sharp Stone Pebble"] 1
+clear @p[distance=..1,gamemode=!creative] string 2
+clear @p[distance=..1,gamemode=!creative] minecraft:wooden_pickaxe[minecraft:item_name="Brittle Stick"] 1
+clear @p[distance=..1,gamemode=!creative] minecraft:wooden_pickaxe[minecraft:item_name="Sharp Stone Pebble"] 1
 
 playsound minecraft:entity.villager.work_fletcher master @a[distance=..10] ~ ~ ~ 1 0.5
 

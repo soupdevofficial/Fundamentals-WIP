@@ -5,24 +5,35 @@
  # Created by lzenl.
 ##
 say Running on Junction!
-
+#core utility
+scoreboard objectives add fmc.info trigger "info"
 scoreboard objectives add .data dummy
 scoreboard objectives add .id dummy
+
+
+
+
+scoreboard objectives add fishing minecraft.used:minecraft.fishing_rod
+
+#temperature
 scoreboard objectives add temp dummy
+
+
 scoreboard objectives add charge dummy
 scoreboard objectives add active dummy
 scoreboard objectives add element dummy
+
+
 scoreboard objectives add animation dummy
+
+
 scoreboard objectives add aurora dummy
 
 
-
+#weapon/ dmg related
 scoreboard objectives add weapon.cooldown dummy
 scoreboard objectives add weapon.timer_delta dummy
 scoreboard objectives add weapon.timer_old dummy
-
-
-
 
 scoreboard objectives add dmg_dealt minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add dmg_taken minecraft.custom:minecraft.damage_taken
@@ -32,6 +43,11 @@ scoreboard objectives add dmg_taken_absorbed minecraft.custom:minecraft.damage_a
 
 
 
+#dialogue related
+
+scoreboard objectives add dlg_speed dummy
+scoreboard objectives add dlg_next dummy
+scoreboard objectives add dlg_adv dummy
 
 
 
@@ -48,7 +64,7 @@ scoreboard objectives add nbs_allsoulsho dummy
 scoreboard objectives add nbs_allsoulsho_t dummy
 scoreboard players set #chunk_size .data 50
 scoreboard players set #chunk_size_half .data 25
-scoreboard players set speed nbs_allsoulsho 40
+scoreboard players set #music.speed.slow .data 40
 scoreboard players set #-1000 .data -1000
 scoreboard players set #vt_-1 .data -1
 scoreboard players set #vt_scale .data 1024

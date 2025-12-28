@@ -5,7 +5,7 @@
  # Created by .
 ##
 
-kill @e[sort=nearest,limit=3,type=experience_orb,distance=..0.5]
+kill @e[sort=nearest,limit=3,type=experience_orb,distance=..2]
 
 
 execute on passengers as @s[tag=hb] run return fail

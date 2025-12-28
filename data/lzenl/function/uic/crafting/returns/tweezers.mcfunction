@@ -1,6 +1,6 @@
-clear @p[distance=..1] minecraft:wooden_pickaxe[minecraft:item_name="Small Stone Pebble"] 2
-clear @p[distance=..1] string 3
-clear @p[distance=..1] stick 2
+clear @p[distance=..1,gamemode=!creative] minecraft:wooden_pickaxe[minecraft:item_name="Small Stone Pebble"] 2
+clear @p[distance=..1,gamemode=!creative] string 3
+clear @p[distance=..1,gamemode=!creative] stick 2
 give @p[distance=..1] wooden_pickaxe[damage=0,max_damage=5,repair_cost=99,item_model="minecraft:shears",item_name="Tweezers",consumable={consume_seconds:99999,animation:"block",has_consume_particles:true},custom_data={tweezers:1b},attribute_modifiers=[{id:"block_interaction_range",type:"block_interaction_range",amount:-999,operation:"add_value",slot:"mainhand",display:{type:"hidden"}},{id:"entity_interaction_range",type:"entity_interaction_range",amount:-999,operation:"add_value",slot:"mainhand",display:{type:"hidden"}},{id:"block_interaction_range",type:"block_interaction_range",amount:-999,operation:"add_value",slot:"offhand",display:{type:"hidden"}},{id:"entity_interaction_range",type:"entity_interaction_range",amount:-999,operation:"add_value",slot:"offhand",display:{type:"hidden"}}]] 1
 playsound minecraft:entity.villager.work_fletcher master @a[distance=..10] ~ ~ ~ 1 0.5
 advancement grant @p[distance=..1] only lzenl:game/2_craft

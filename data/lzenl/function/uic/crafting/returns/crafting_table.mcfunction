@@ -4,11 +4,11 @@
  #
  # Created by .
 ##
-clear @p[distance=..1] #planks 1
-clear @p[distance=..1] leather 1
-clear @p[distance=..1] shears[item_name="Small Iron Shears"] 2
-clear @p[distance=..1] iron_axe[item_name="Small Iron Hammer"] 2
-clear @p[distance=..1] iron_axe[item_name="Small Iron Saw"] 2
+clear @p[distance=..1,gamemode=!creative] #planks 1
+clear @p[distance=..1,gamemode=!creative] leather 1
+clear @p[distance=..1,gamemode=!creative] shears[item_name="Small Iron Shears"] 2
+clear @p[distance=..1,gamemode=!creative] iron_axe[item_name="Small Iron Hammer"] 2
+clear @p[distance=..1,gamemode=!creative] iron_axe[item_name="Small Iron Saw"] 2
 
 
 give @p[distance=..1] crafting_table

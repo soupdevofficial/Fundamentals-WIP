@@ -4,7 +4,7 @@
  #
  # Created by .
 ##
-clear @p[distance=..1] minecraft:wooden_pickaxe[minecraft:item_name="Small Stone Pebble"] 1
+clear @p[distance=..1,gamemode=!creative] minecraft:wooden_pickaxe[minecraft:item_name="Small Stone Pebble"] 1
 
 playsound minecraft:block.dripstone_block.fall player @a[distance=..10] ~ ~ ~ 1 2
 

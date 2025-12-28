@@ -5,7 +5,7 @@
  # Created by .
 ##
 
-item replace entity @p[distance=..1] player.cursor from entity @n[tag=crafting_ui,type=donkey] horse.3
+item replace entity @p[distance=..1] player.cursor from entity @n[tag=crafting_ui,type=donkey] horse.1
 
 
 execute store result score #req1 .data run clear @p[distance=..1] string 0
