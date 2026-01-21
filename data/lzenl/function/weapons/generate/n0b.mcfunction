@@ -1,0 +1,11 @@
+execute if score #random .data matches 19..29 run return run function lzenl:weapons/generate/n0ba
+execute if score #random .data matches 30 run return run data modify storage temp data.weapon.gname append value "Tr"
+execute if score #random .data matches 31 run return run data modify storage temp data.weapon.gname append value "Ql"
+execute if score #random .data matches 32 run return run data modify storage temp data.weapon.gname append value "Wel"
+execute if score #random .data matches 33 run return run data modify storage temp data.weapon.gname append value "St"
+execute if score #random .data matches 34 run return run data modify storage temp data.weapon.gname append value "Deus V"
+execute if score #random .data matches 35 run return run data modify storage temp data.weapon.gname append value "Sc"
+execute if score #random .data matches 36 run return run data modify storage temp data.weapon.gname append value "Vos N"
+execute if score #random .data matches 37 run return run data modify storage temp data.weapon.gname append value "Nova Chr"
+execute if score #random .data matches 38 run return run data modify storage temp data.weapon.gname append value "Tit"
+execute if score #random .data matches 39 run return run data modify storage temp data.weapon.gname append value "Exc"

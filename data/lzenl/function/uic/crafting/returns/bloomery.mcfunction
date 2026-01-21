@@ -16,3 +16,4 @@ advancement grant @p[distance=..1] only lzenl:game/2_craft
 
 advancement grant @p[distance=..1] only lzenl:game/4_pottery
 advancement grant @p[distance=..1] only lzenl:game/4_pottery/bloomery
+advancement grant @p[distance=..1] only lzenl:game/5_master_potter claybloomery

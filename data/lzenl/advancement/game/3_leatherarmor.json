@@ -1,0 +1,41 @@
+{
+    "display": {
+        "title": "Warm and Cozy",
+        "description": "handcraft a full set of [leather armor]",
+        "icon": {
+            "id": "leather_chestplate",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/2_craft",
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        },
+         "2": {
+            "trigger": "minecraft:impossible"
+        },
+         "3": {
+            "trigger": "minecraft:impossible"
+        },
+         "4": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+        "1"
+        ],
+        [
+        "2"
+        ],
+        [
+        "3"
+        ],
+        [
+        "4"
+        ]
+    ]
+}

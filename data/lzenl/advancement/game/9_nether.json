@@ -1,8 +1,6 @@
 {   
-    
-
-"display": {
-        "title": "I have sinned",
+    "display": {
+        "title": "Is this Hell?",
         "description": "enter the nether",
         "icon": {
             "id": "netherrack",

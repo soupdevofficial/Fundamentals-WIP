@@ -1,12 +1,13 @@
 {
     "display": {
-        "title": "Heroes (Fundamentals)",
+        "title": "Fundamentals - Heroes",
         "description": "",
         "icon": {
             "id": "enchanted_book"
         },
         "background": "block/mud",
-        "show_toast": false,
+        "show_toast": true,
+
         "announce_to_chat": false,
         "frame": "challenge"
     },

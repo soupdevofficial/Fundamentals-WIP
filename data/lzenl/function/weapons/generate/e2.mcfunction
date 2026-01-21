@@ -1,0 +1,5 @@
+execute if score #ghw.element .data matches 1 run return run data modify storage temp data.weapon.color set value "#999999"
+execute if score #ghw.element .data matches 2 run return run data modify storage temp data.weapon.color set value "light_purple"
+execute if score #ghw.element .data matches 3 run return run data modify storage temp data.weapon.color set value "#FF3C00"
+execute if score #ghw.element .data matches 4 run data modify storage temp data.weapon.color set value "#176069"
+execute if score #ghw.element .data matches 5 run return run data modify storage temp data.weapon.color set value "#fcbd3f"

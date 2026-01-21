@@ -1,17 +1,40 @@
 scoreboard objectives remove .data
 scoreboard objectives remove .id
 scoreboard objectives remove temp
-scoreboard objectives remove charge
 scoreboard objectives remove active
-scoreboard objectives remove element
+
+
+
+
 scoreboard objectives remove animation
+
+
+
+
+
 scoreboard objectives remove aurora
+
+
+
+
+
 scoreboard objectives remove weapon.cooldown
 scoreboard objectives remove dmg_dealt
 scoreboard objectives remove dmg_taken
+
+
+
 scoreboard objectives remove died
+
+
+
+
 scoreboard objectives remove nbs_allsoulsho
 scoreboard objectives remove nbs_allsoulsho_t
+
+
+
+
 scoreboard objectives remove fishing
 
 team remove noCollision

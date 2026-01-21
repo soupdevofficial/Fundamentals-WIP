@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": "Master Potter!",
+        "description": "handcraft every clay item",
+        "icon": {
+            "id": "clay_ball",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lzenl:game/4_pottery",
+    "criteria": {
+        "claybloomery": {
+            "trigger": "minecraft:impossible"
+        },
+        "claybucket": {
+            "trigger": "minecraft:impossible"
+        },
+        "claymold": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+        "claybloomery"
+        ],
+        [
+        "claybucket"
+        ],
+        [
+        "claymold"
+        ]
+    ]
+}

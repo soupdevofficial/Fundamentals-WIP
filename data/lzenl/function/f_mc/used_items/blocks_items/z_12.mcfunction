@@ -2,5 +2,7 @@ execute align xyz run summon item_display ~0.5 ~1 ~0.5 {item:{id:"minecraft:ston
 fill ~ ~ ~ ~ ~ ~ barrel[facing=up]{CustomName:"Scroll Table"} replace
 playsound block.enchantment_table.use block @a ~ ~ ~ 0.1 0.5
 playsound block.wood.place block @a ~ ~ ~ 1 1
-advancement grant @s only lzenl:game/8_scroll_table
+advancement grant @s only lzenl:game/prg/8_scroll_table
+advancement grant @s only lzenl:game/magic/root
+
 function lzenl:scroll_table/set_content

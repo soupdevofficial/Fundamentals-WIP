@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Fish da fish!",
+        "description": "handcraft a \n[fishing rod] \ncheck advancement tab [Fishing]",
+        "icon": {
+            "id": "fishing_rod",
+            "count": 1
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "lzenl:game/2_craft",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

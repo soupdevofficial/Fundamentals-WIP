@@ -20,21 +20,6 @@ execute if score @s fmc.info matches 22 run tellraw @s ""
 execute if score @s fmc.info matches 23 run tellraw @s ""
 execute if score @s fmc.info matches 25 run tellraw @s ""
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 scoreboard players reset @s fmc.info
 scoreboard players enable @s fmc.info
 

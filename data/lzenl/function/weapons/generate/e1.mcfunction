@@ -1,0 +1,5 @@
+execute if score #ghw.element .data matches 1 run return run data modify storage temp data.weapon.lor_elem set value "normal"
+execute if score #ghw.element .data matches 2 run return run data modify storage temp data.weapon.lor_elem set value "magic"
+execute if score #ghw.element .data matches 3 run return run data modify storage temp data.weapon.lor_elem set value "infernal"
+execute if score #ghw.element .data matches 4 run return run data modify storage temp data.weapon.lor_elem set value "dark"
+execute if score #ghw.element .data matches 5 run data modify storage temp data.weapon.lor_elem set value "light"

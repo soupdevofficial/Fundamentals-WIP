@@ -1,10 +1,3 @@
-##
- # caught.mcfunction
- # 
- #
- # Created by .
-##
-
 execute store result score #fish.size .data run random value 5..30
 execute store result score #fish.size.adjust .data run random value 5..10
 execute unless biome ~ ~ ~ #is_deep_ocean unless biome ~ ~ ~ frozen_ocean if score #fish.size .data matches 15..30 run scoreboard players operation #fish.size .data -= #fish.size.adjust .data
@@ -12,7 +5,14 @@ execute unless biome ~ ~ ~ #is_deep_ocean unless biome ~ ~ ~ frozen_ocean if sco
 function lzenl:fishing/loot/chances
 
 
-execute at @s if score #fish.type .data matches 1 run summon item_display ~ ~ ~ {teleport_duration:5,Tags:["fish.move"],item:{id:"minecraft:kelp",count:1}}
+execute at @s if score #fish.type .data matches 1 run summon item_display ~ ~ ~ {teleport_duration:5,Tags:["fish.move"]}
+scoreboard players operation @n[tag=fish.move,distance=..1] .data = #fish.type .data
+scoreboard players operation @n[tag=fish.move,distance=..1] temp = #fish.size .data
+
+ride @s mount @n[tag=fish.move,distance=..1] 
+
+
+
 
 #fish.flesh_amount (size/5)
 

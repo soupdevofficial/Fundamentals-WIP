@@ -1,0 +1,6 @@
+execute if score #random .data matches 1 run return run data modify storage temp data.weapon.gname append value "a"
+execute if score #random .data matches 2 run return run data modify storage temp data.weapon.gname append value "e"
+execute if score #random .data matches 3 run return run data modify storage temp data.weapon.gname append value "i"
+execute if score #random .data matches 4 run return run data modify storage temp data.weapon.gname append value "o"
+execute if score #random .data matches 5 run return run data modify storage temp data.weapon.gname append value "u"
+execute if score #random .data matches 6 run return run data modify storage temp data.weapon.gname append value "ia"

@@ -1,11 +1,11 @@
 {
     "display": {
-        "title": "Fundamentals",
+        "title": "Fundamentals - Progression",
         "description": "",
         "icon": {
             "id": "grass_block"
         },
-        "background": "block/mud",
+        "background": "block/moss_block",
         "show_toast": false,
         "announce_to_chat": false,
         "frame": "challenge"

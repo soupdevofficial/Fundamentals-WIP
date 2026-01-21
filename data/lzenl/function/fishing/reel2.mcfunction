@@ -1,0 +1,2 @@
+execute facing entity @n[type=interaction,tag=user,distance=..150,limit=1] eyes rotated ~ 0 positioned ^ ^ ^0.75 if block ~ ~ ~ #replaceable unless block ~ ~ ~ #air run tp @s ~ ~ ~
+execute if score @s .data matches 1 run return fail

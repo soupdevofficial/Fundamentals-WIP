@@ -1,0 +1,6 @@
+##
+ # summonspawnlocation.mcfunction
+ # 
+ #
+ # Created by .
+##

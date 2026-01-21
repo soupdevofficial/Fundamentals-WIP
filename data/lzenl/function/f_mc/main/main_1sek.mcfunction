@@ -31,3 +31,6 @@ execute as @e[type=block_display,tag=dark_crystal] at @s if entity @p[distance=.
 function lzenl:f_mc/boss/leviathan/move
 
 execute as @a[scores={fmc.info=1..}] run function lzenl:f_mc/info
+
+
+execute as @a at @s run function lzenl:f_mc/generation/check_loc_change

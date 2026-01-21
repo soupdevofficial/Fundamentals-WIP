@@ -14,7 +14,7 @@ scoreboard players operation @s weapon.timer_delta = #timer .data
 scoreboard players operation @s weapon.timer_delta -= @s weapon.timer_old
 execute if score @s weapon.timer_delta matches ..-1 run scoreboard players operation @s weapon.timer_delta *= #vt_-1 .data
 
-execute if score @s weapon.timer_delta < @s weapon.cooldown run return run data modify storage temp data.text[0].text set value "# "
+execute if score @s[tag=!comb.man.dmg] weapon.timer_delta < @s weapon.cooldown run return run data modify storage temp data.text[0].text set value "# "
 
 scoreboard players set @s weapon.cooldown 2000
 

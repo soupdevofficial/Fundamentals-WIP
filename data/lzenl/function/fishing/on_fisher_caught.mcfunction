@@ -1,11 +1,3 @@
-##
- # on_fisher.mcfunction
- # 
- #
- # Created by .
-##
-
-
 title @s title ""
 execute if score #fish.type .data matches 0..1 run title @s subtitle "Caught! Spam [Attack] Button!"
 execute if score #fish.type .data matches 2 run title @s subtitle "Hooked! Spam [Attack] Button!"
@@ -24,7 +16,6 @@ attribute @s explosion_knockback_resistance modifier add fishing 999 add_value
 attribute @s jump_strength modifier add fishing -999 add_multiplied_total
 
 attribute @s attack_speed modifier add fishing 2 add_multiplied_total
-
 
 tag @s add fish.reeling
 advancement revoke @s only lzenl:f_mc/fishing.loop

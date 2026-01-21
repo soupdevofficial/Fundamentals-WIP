@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Fundamentals - Archeology",
+        "description": "",
+        "icon": {
+            "id": "brush"
+        },
+        "background": "block/dirt",
+        "show_toast": true,
+
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

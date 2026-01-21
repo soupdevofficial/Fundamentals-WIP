@@ -10,7 +10,7 @@ schedule function lzenl:f_mc/main/main_1sek 1s append
 
 execute unless score #season .data matches 1..5 run scoreboard players set #season .data 1
 
-execute store result score #day .data run time query daytime
+execute store result score #day .data run time query minecraft:day
 execute if score #day .data matches 1 run function lzenl:f_mc/season/count
 
 execute as @e[tag=scroll_table_root] at @s if entity @p[distance=..100] run function lzenl:scroll_table/check_content
@@ -18,8 +18,6 @@ execute at @e[tag=small_campfire,tag=lit,distance=..100] if entity @p[distance=.
 
 
 
-
-execute as @a at @s run function lzenl:f_mc/generation/check_loc_change
 execute as @a run function lzenl:f_mc/on_players
 
 
@@ -53,3 +51,7 @@ execute as @e[type=item,tag=lasso,tag=check] at @s unless function lzenl:check/v
 
 #music
 execute as @a at @s run function lzenl:f_mc/main/music
+
+
+#skills
+execute as @e[tag=skill.set,tag=s.move,type=item_display] at @s if entity @p[distance=..100] run function lzenl:weapons/skills/skill/root

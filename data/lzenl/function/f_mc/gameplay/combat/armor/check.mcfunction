@@ -6,11 +6,12 @@
 ##
 tag @s remove pl_hit
 
-execute unless function lzenl:f_mc/gameplay/combat/armor/attacker run return fail
+execute as @s[tag=!comb.man.dmg] unless function lzenl:f_mc/gameplay/combat/armor/attacker run return fail
 
 
 
-execute on attacker run function lzenl:f_mc/gameplay/combat/armor/element_get
+execute as @s[tag=!comb.man.dmg] on attacker run function lzenl:f_mc/gameplay/combat/armor/element_get
+execute as @s[tag=comb.man.dmg] as @n[tag=skill.set,distance=..10,type=item_display] run function lzenl:f_mc/gameplay/combat/armor/element_get
 
 
 
@@ -32,6 +33,8 @@ execute if score #return .data matches 6 run data merge storage temp {data:{text
 
 
 function lzenl:f_mc/gameplay/combat/armor/element_store
+execute as @s[tag=comb.man.dmg] as @n[tag=skill.set,distance=..10,type=item_display] run scoreboard players operation #dealt .data = @s dmg_dealt
+
 
 execute on attacker as @s[type=player] run scoreboard players operation #dealt .data = @s dmg_dealt
 execute if entity @s[type=player] run scoreboard players operation #dealt .data = @s dmg_taken

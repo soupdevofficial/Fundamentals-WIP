@@ -2,10 +2,8 @@
     "values": [
 
         "minecraft:arrow",
-        "minecraft:dragon_breath"
-
-
-
+        "minecraft:dragon_breath",
+        "minecraft:mob_attack_no_aggro"
 
     ]
 }

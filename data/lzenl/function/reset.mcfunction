@@ -19,9 +19,7 @@ scoreboard objectives add fishing minecraft.used:minecraft.fishing_rod
 scoreboard objectives add temp dummy
 
 
-scoreboard objectives add charge dummy
 scoreboard objectives add active dummy
-scoreboard objectives add element dummy
 
 
 scoreboard objectives add animation dummy
@@ -40,6 +38,8 @@ scoreboard objectives add dmg_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add dmg_dealt_absorbed minecraft.custom:minecraft.damage_dealt_absorbed
 scoreboard objectives add dmg_taken_absorbed minecraft.custom:minecraft.damage_absorbed
 
+scoreboard objectives add skills.range dummy
+scoreboard objectives add skills.reps dummy
 
 
 
@@ -49,19 +49,16 @@ scoreboard objectives add dlg_speed dummy
 scoreboard objectives add dlg_next dummy
 scoreboard objectives add dlg_adv dummy
 
-
-
-
-
-
-
-
-
-
 scoreboard objectives add died deathCount
+
+
 data modify storage f_mc:combat data.elements set value {1:{1:4,2:0.5,3:2,4:0.5,5:1,6:2,got:1},2:{1:1,2:2,3:4,4:2,5:0.5,6:4,got:2},3:{1:0.5,2:4,3:0.5,4:1,5:1,6:0.5,got:3},4:{1:1,2:2,3:1,4:1,5:4,6:0.5,got:4},5:{1:1,2:1,3:2,4:4,5:1,6:2,got:5},6:{1:2,2:2,3:0.5,4:0.5,5:2,6:1,got:6}}
+
+
 scoreboard objectives add nbs_allsoulsho dummy
 scoreboard objectives add nbs_allsoulsho_t dummy
+
+
 scoreboard players set #chunk_size .data 50
 scoreboard players set #chunk_size_half .data 25
 scoreboard players set #music.speed.slow .data 40
@@ -72,9 +69,11 @@ scoreboard players operation #vt_scale2 .data = #vt_scale .data
 scoreboard players operation #vt_scale2 .data *= #vt_scale .data
 scoreboard players set #dmg_max_multi .data 4000
 scoreboard players set #chunk_distance .data 2
+
+
 gamerule limited_crafting true
 gamerule max_snow_accumulation_height 5
-gamerule max_command_sequence_length 10000
+gamerule max_command_sequence_length 999999
 gamerule keep_inventory true
 
 team add noCollision "noCollision"

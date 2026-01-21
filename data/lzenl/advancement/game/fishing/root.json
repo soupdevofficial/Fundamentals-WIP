@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Fundamentals - Fishing",
+        "description": "",
+        "icon": {
+            "id": "fishing_rod"
+        },
+        "background": "block/blue_wool",
+        "show_toast": true,
+
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

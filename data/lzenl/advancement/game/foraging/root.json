@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Fundamentals - Foraging",
+        "description": "",
+        "icon": {
+            "id": "dark_oak_sapling"
+        },
+        "background": "block/stripped_dark_oak_log",
+        "show_toast": true,
+
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "Fundamentals - Mining",
+        "description": "",
+        "icon": {
+            "id": "copper_pickaxe"
+        },
+        "background": "block/stone",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

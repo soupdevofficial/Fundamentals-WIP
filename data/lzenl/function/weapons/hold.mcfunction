@@ -5,3 +5,4 @@
  # Created by .
 ##
 advancement revoke @s only lzenl:weapon/hold
+function lzenl:weapons/skills/start

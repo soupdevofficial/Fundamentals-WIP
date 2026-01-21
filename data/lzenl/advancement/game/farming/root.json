@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Fundamentals - Farming",
+        "description": "",
+        "icon": {
+            "id": "wheat"
+        },
+        "background": "block/farmland_moist",
+        "show_toast": true,
+
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

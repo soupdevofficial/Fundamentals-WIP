@@ -8,22 +8,27 @@
 ##chunk size is 50x50x50
 scoreboard players set run .data 0
 
+
+
+
 execute store result score #gen.math.x .data run data get entity @s Pos[0]
 execute store result score #gen.math.y .data run data get entity @s Pos[1]
 execute store result score #gen.math.z .data run data get entity @s Pos[2]
+
+execute if score #gen.old.x .data = #gen.math.x .data if score #gen.old.y .data = #gen.math.y .data if score #gen.old.z .data = #gen.math.z .data run return fail
+
+scoreboard players operation #gen.old.x .data = #gen.math.x .data
+scoreboard players operation #gen.old.y .data = #gen.math.y .data
+scoreboard players operation #gen.old.z .data = #gen.math.z .data
 
 execute if score #gen.math.x .data matches ..-1 run scoreboard players remove #gen.math.x .data 1
 execute if score #gen.math.z .data matches ..-1 run scoreboard players remove #gen.math.z .data 1
 execute if score #gen.math.y .data matches ..-1 run scoreboard players remove #gen.math.y .data 1
 
-
-
 #chunk origin center
 scoreboard players operation #gen.math.x .data /= #chunk_size .data
 scoreboard players operation #gen.math.z .data /= #chunk_size .data
 scoreboard players operation #gen.math.y .data /= #chunk_size .data
-
-
 
 # get corners of cube of chunks
 scoreboard players operation #gen.math.max.x .data = #gen.math.x .data
