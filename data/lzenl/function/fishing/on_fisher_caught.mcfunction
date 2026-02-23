@@ -5,11 +5,11 @@ execute if score #fish.type .data matches 2 run title @s subtitle "Hooked! Spam 
 playsound minecraft:entity.fishing_bobber.splash player @s ~ ~ ~ 0.1 1
 playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 0.1 1
 
-summon interaction ~ ~ ~ {Silent:1b,width:0.25f,height:0.25f,Tags:["fishing.reel"]}
-scoreboard players set @n[tag=fishing.reel,distance=..1] .data 25
-scoreboard players operation @n[tag=fishing.reel,distance=..1] fishing = #fish.size .data
-scoreboard players operation @n[tag=fishing.reel,distance=..1] fishing /= #10 .data
-scoreboard players operation @n[tag=fishing.reel,distance=..1] .id = @s .id
+summon interaction ~ ~ ~ {Silent:1b,width:0.25f,height:0.25f,Tags:["fundamentals.fishing.reel"]}
+scoreboard players set @n[tag=fundamentals.fishing.reel,distance=..1] .data 25
+scoreboard players operation @n[tag=fundamentals.fishing.reel,distance=..1] fishing = #fish.size .data
+scoreboard players operation @n[tag=fundamentals.fishing.reel,distance=..1] fishing /= #10 .data
+scoreboard players operation @n[tag=fundamentals.fishing.reel,distance=..1] .id = @s .id
 
 attribute @s movement_speed modifier add fishing -999 add_multiplied_total
 attribute @s explosion_knockback_resistance modifier add fishing 999 add_value

@@ -10,7 +10,7 @@ execute on passengers if entity @s[type=text_display,tag=display] run return run
 
 
 
-execute at @s[tag=boss] run return run title @a[distance=..150] actionbar ["-={ The Ender Dragon | ",{storage: "f_mc:combat", nbt: "data.display.bar", interpret: true}," | ",{storage: "f_mc:combat", nbt: "data.display.element", interpret: true},"}=-"]
+execute at @s[tag=fundamentals.boss] run return run title @a[distance=..150] actionbar ["-={ The Ender Dragon | ",{storage: "f_mc:combat", nbt: "data.display.bar", interpret: true}," | ",{storage: "f_mc:combat", nbt: "data.display.element", interpret: true},"}=-"]
 
 
 

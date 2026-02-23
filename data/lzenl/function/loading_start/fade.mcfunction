@@ -1,0 +1,1 @@
+execute as @a[tag=fade] at @s run function lzenl:loading_start/fading

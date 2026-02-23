@@ -9,7 +9,7 @@ execute as @s[tag=!fish.reeling] run return fail
 
 
 
-execute at @s as @e[tag=fishing.reel,type=interaction,distance=..4] if score @s .id = @p[distance=0] .id run function lzenl:fishing/reel_mech
+execute at @s as @e[tag=fundamentals.fishing.reel,type=interaction,distance=..4] if score @s .id = @p[distance=0] .id run function lzenl:fishing/reel_mech
 
 execute at @s as @e[tag=caught,tag=fishing,type=armor_stand,distance=..40] if score @s .id = @p[distance=0] .id at @s on vehicle at @s run function lzenl:fishing/x_move
 

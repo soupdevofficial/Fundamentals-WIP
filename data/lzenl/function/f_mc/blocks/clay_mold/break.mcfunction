@@ -6,10 +6,10 @@
 ##
 
 
-execute store result score #return .data run scoreboard players get @n[tag=clay_mold,type=interaction,distance=..0.5] .data
+execute store result score #return .data run scoreboard players get @n[tag=fundamentals.block.clay_mold,type=interaction,distance=..0.5] .data
 
-execute on passengers as @s[tag=clay_mold] if score @s active matches 1.. run fill ~ ~ ~ ~ ~ ~ lava[level=1] replace #replaceable
-execute on passengers as @s[tag=clay_mold] if score @s active matches 1.. run function lzenl:f_mc/blocks/kill
+execute on passengers as @s[tag=fundamentals.block.clay_mold] if score @s active matches 1.. run fill ~ ~ ~ ~ ~ ~ lava[level=1] replace #replaceable
+execute on passengers as @s[tag=fundamentals.block.clay_mold] if score @s active matches 1.. run function lzenl:f_mc/blocks/kill
 
 execute if score #return .data matches 1 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:7b,type:2},id:1},"minecraft:item_model":"minecraft:brown_carpet","minecraft:item_name":"Clay Mold | Shape: [Sword]"}}}
 execute if score #return .data matches 2 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:7b,type:2},id:2},"minecraft:item_model":"minecraft:brown_carpet","minecraft:item_name":"Clay Mold | Shape: [Axe]"}}}

@@ -23,5 +23,10 @@
       }
     }
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": false,
+  "rewards": {
+    "recipes":[
+      "lzenl:f_mc/scroll_table"
+    ]
+  }
 }

@@ -5,7 +5,7 @@
  # Created by .
 ##
 
-execute as @s[tag=dragon,tag=vul,tag=!superarmor] run return fail
+execute as @s[tag=fundamentals.boss.dragon,tag=vul,tag=!superarmor] run return fail
 execute as @s[tag=recent_dmg,tag=!superarmor] run return run tag @s remove recent_dmg
 execute as @s[nbt={HurtTime:10s},tag=!superarmor] run return fail
 
@@ -56,15 +56,15 @@ execute if entity @s[tag=light] run data modify storage f_mc:combat data.display
 execute if entity @s[tag=dark] run data modify storage f_mc:combat data.display.element append value {"color":"#176069","text":"[dark] "}
 execute if entity @s[tag=abyssal] run data modify storage f_mc:combat data.display.element append value {"color":"#8e31cc","text":"[abyssal] "}
 
-execute if entity @s[type=#normal,tag=!boss] run data modify storage f_mc:combat data.display.element append value {"color":"#999999","text":"[normal] "}
-execute if entity @s[type=#magic,tag=!boss] run data modify storage f_mc:combat data.display.element append value {"color":"light_purple","text":"[magic] "}
-execute if entity @s[type=#infernal,tag=!boss] run data modify storage f_mc:combat data.display.element append value {"color":"#FF3C00","text":"[infernal] "}
-execute if entity @s[type=#light,tag=!boss] run data modify storage f_mc:combat data.display.element append value {"color":"#fcbd3f","text":"[light] "}
-execute if entity @s[type=#dark,tag=!boss] run data modify storage f_mc:combat data.display.element append value {"color":"#176069","text":"[dark] "}
-execute if entity @s[type=#abyssal,tag=!boss] run data modify storage f_mc:combat data.display.element append value {"color":"#8e31cc","text":"[abyssal] "}
+execute if entity @s[type=#normal,tag=!fundamentals.boss] run data modify storage f_mc:combat data.display.element append value {"color":"#999999","text":"[normal] "}
+execute if entity @s[type=#magic,tag=!fundamentals.boss] run data modify storage f_mc:combat data.display.element append value {"color":"light_purple","text":"[magic] "}
+execute if entity @s[type=#infernal,tag=!fundamentals.boss] run data modify storage f_mc:combat data.display.element append value {"color":"#FF3C00","text":"[infernal] "}
+execute if entity @s[type=#light,tag=!fundamentals.boss] run data modify storage f_mc:combat data.display.element append value {"color":"#fcbd3f","text":"[light] "}
+execute if entity @s[type=#dark,tag=!fundamentals.boss] run data modify storage f_mc:combat data.display.element append value {"color":"#176069","text":"[dark] "}
+execute if entity @s[type=#abyssal,tag=!fundamentals.boss] run data modify storage f_mc:combat data.display.element append value {"color":"#8e31cc","text":"[abyssal] "}
 
 
-execute if entity @s[tag=!boss] unless data storage f_mc:combat data.display.element run data modify storage f_mc:combat data.display.element set value [{"color":"#999999","text":"[normal] "}]
+execute if entity @s[tag=!fundamentals.boss] unless data storage f_mc:combat data.display.element run data modify storage f_mc:combat data.display.element set value [{"color":"#999999","text":"[normal] "}]
 scoreboard players set #armor_max .data 3
 
 execute store result score #armor_current .data run attribute @s minecraft:armor get 10
@@ -76,5 +76,5 @@ scoreboard players set #armor_max .data 30
 function lzenl:f_mc/gameplay/combat/armor/display
 
 
-execute at @s[tag=boss,tag=dragon] run return run title @a[distance=..150] actionbar ["-={ The Ender Dragon | ",{storage: "f_mc:combat", nbt: "data.display.bar", interpret: true}," | ",{storage: "f_mc:combat", nbt: "data.display.element", interpret: true},"}=-"]
+execute at @s[tag=fundamentals.boss,tag=fundamentals.boss.dragon] run return run title @a[distance=..150] actionbar ["-={ The Ender Dragon | ",{storage: "f_mc:combat", nbt: "data.display.bar", interpret: true}," | ",{storage: "f_mc:combat", nbt: "data.display.element", interpret: true},"}=-"]
 execute on passengers if entity @s[type=text_display,tag=display] run return run function lzenl:f_mc/gameplay/combat/armor/update_display

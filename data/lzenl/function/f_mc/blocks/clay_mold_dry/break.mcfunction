@@ -5,7 +5,7 @@
  # Created by .
 ##
 
-execute store result score #return .data run scoreboard players get @n[tag=dry_clay_mold,type=interaction,distance=..0.5] .data
+execute store result score #return .data run scoreboard players get @n[tag=fundamentals.block.dry_clay_mold,type=interaction,distance=..0.5] .data
 
 
 execute if score #return .data matches 1 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:1},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Sword]"}}}

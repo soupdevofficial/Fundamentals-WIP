@@ -11,28 +11,34 @@
     "#X#",
     "B#B"
   ],
-  "result": {
-    "count": 1,
-    "id": "minecraft:stone_pickaxe",
+"result": {
+    "id": "minecraft:poisonous_potato",
     "components": {
+      "minecraft:custom_data": "{item:{id:12b,type:2b}}",
+      "minecraft:item_model": "player_head",
       "minecraft:item_name": "Scroll Table",
-
       "minecraft:consumable": {
         "consume_seconds": 0,
         "animation": "none",
         "sound": "intentionally_empty",
         "has_consume_particles": false
-        },
-      "minecraft:custom_data":{
-          "item":{
-            "type":2,"id":12
+      },
+      "!minecraft:food": {},
+      "minecraft:profile": {
+        "name": "textures",
+        "id": [
+          45551890,
+          -252917559,
+          -259190533,
+          -137687857
+        ],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2OTQyMzc5NDk1MCwKICAicHJvZmlsZUlkIiA6ICI1YTQzNmM4NWRiNGQ0N2UzODAyNDdlZmRiOTBkNWRlOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTYWJlclBhd3MiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjA2ZDAyYTkwMmI0ZTk3MmM3NGEwMjI4YTBmNDhlMzFjODcxZWNjMzg0OWFhM2M4NmJmNjkwN2FhMTEyOTcwIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
           }
-
-
-        },
-            "item_model": "enchanting_table",
-            "!minecraft:tool": {},
-            "!attribute_modifiers": {}
+        ]
+      }
     }
   }
 }

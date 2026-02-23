@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": "enchanted_book",
+    "O": "obsidian",
+    "D": "diamond",
+    "L": "leather"
+  },
+  "pattern": [
+    " E ",
+    "DLD",
+    "OOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:enchanting_table"
+  }
+}

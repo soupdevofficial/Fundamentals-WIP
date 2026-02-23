@@ -7,7 +7,7 @@
 
 particle witch ~ ~ ~ 0.25 0.25 0.25 0.1 2 force @a
 
-execute as @e[distance=..2,tag=!dragon,type=!#not_mob] at @s run damage @s 2.5 dragon_breath by @n[distance=..200,tag=dragon_hp,type=slime] from @n[distance=..200,tag=dragon_hp,type=slime]
+execute as @e[distance=..2,tag=!fundamentals.boss.dragon,type=!#not_mob] at @s run damage @s 2.5 dragon_breath by @n[distance=..200,tag=fundamentals.boss.dragon_hp,type=slime] from @n[distance=..200,tag=fundamentals.boss.dragon_hp,type=slime]
 
 execute positioned ^ ^ ^-0.5 align xyz unless block ~ ~ ~ #dragon_transparent unless block ~ ~ ~ #dragon_immune unless block ~ ~ ~ #air run fill ^-1 ^1 ^-1 ^1 ^-1 ^1 air replace #mineable/pickaxe
 execute positioned ^ ^ ^0.5 align xyz unless block ~ ~ ~ #dragon_transparent unless block ~ ~ ~ #dragon_immune unless block ~ ~ ~ #air run fill ^-1 ^1 ^-1 ^1 ^-1 ^1 air replace #mineable/pickaxe

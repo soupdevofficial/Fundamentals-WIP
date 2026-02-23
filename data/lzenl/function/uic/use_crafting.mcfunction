@@ -14,4 +14,7 @@ execute as @n[type=item_display,tag=crafting_selected,distance=..1] at @s run fu
 execute as @n[type=donkey,tag=crafting_ui,distance=..1] unless score @s .data matches 2 run function lzenl:uic/set_ui1
 execute as @n[type=donkey,tag=crafting_ui,distance=..1] if score @s .data matches 2 run function lzenl:uic/set_ui2
 
+
+
+
 clear @s *[item_name="execute"]

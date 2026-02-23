@@ -9,7 +9,7 @@
     },
     "rewards": {
       "recipes": [
-        "lzenl:f_mc/recall_compass"
+        "lzenl:f_mc/recipes/recall_compass"
       ]
     },
     "sends_telemetry_event": false

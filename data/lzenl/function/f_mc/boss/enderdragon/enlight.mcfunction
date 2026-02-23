@@ -18,10 +18,10 @@ execute positioned ^ ^ ^-28 run function lzenl:f_mc/boss/enderdragon/area_enligh
 
 #lzenl:animations/ender_dragon/
 
-execute as @a[distance=..50,tag=!dragon] at @s run function lzenl:f_mc/gameplay/camera/shake/start
+execute as @a[distance=..50,tag=!fundamentals.boss.dragon] at @s run function lzenl:f_mc/gameplay/camera/shake/start
 
 
 
-execute at @s positioned ^ ^30 ^-28 as @e[distance=..40,tag=!dragon,type=!#not_mob] run damage @s 5 minecraft:arrow by @n[type=slime,tag=dragon,distance=..240]
+execute at @s positioned ^ ^30 ^-28 as @e[distance=..40,tag=!fundamentals.boss.dragon,type=!#not_mob] run damage @s 5 minecraft:arrow by @n[type=slime,tag=fundamentals.boss.dragon,distance=..240]
 
 

@@ -6,22 +6,22 @@ execute align xyz run summon block_display ~0.5 ~ ~0.5 {Tags:["wet_clay_mold"],P
 
 execute store result score #temp .data run data get entity @s Rotation[0]
 
-execute if score #temp .data matches -45..45 as @e[type=block_display,tag=wet_clay_mold,distance=..1] run rotate @s -90 0
+execute if score #temp .data matches -45..45 as @e[type=block_display,tag=fundamentals.block.wet_clay_mold,distance=..1] run rotate @s -90 0
 
-execute if score #temp .data matches 46..135 as @e[type=block_display,tag=wet_clay_mold,distance=..1] run rotate @s 0 0
+execute if score #temp .data matches 46..135 as @e[type=block_display,tag=fundamentals.block.wet_clay_mold,distance=..1] run rotate @s 0 0
 
-execute if score #temp .data matches 136..180 as @e[type=block_display,tag=wet_clay_mold,distance=..1] run rotate @s 90 0
+execute if score #temp .data matches 136..180 as @e[type=block_display,tag=fundamentals.block.wet_clay_mold,distance=..1] run rotate @s 90 0
 
-execute if score #temp .data matches -180..-136 as @e[type=block_display,tag=wet_clay_mold,distance=..1] run rotate @s 90 0
+execute if score #temp .data matches -180..-136 as @e[type=block_display,tag=fundamentals.block.wet_clay_mold,distance=..1] run rotate @s 90 0
 
-execute if score #temp .data matches -135..-46 as @e[type=block_display,tag=wet_clay_mold,distance=..1] run rotate @s 180 0
+execute if score #temp .data matches -135..-46 as @e[type=block_display,tag=fundamentals.block.wet_clay_mold,distance=..1] run rotate @s 180 0
 
-execute as @e[type=block_display,tag=wet_clay_mold,distance=..1] at @s on passengers run rotate @s ~180 0
+execute as @e[type=block_display,tag=fundamentals.block.wet_clay_mold,distance=..1] at @s on passengers run rotate @s ~180 0
 
 
 scoreboard players reset #temp .data
 
 playsound minecraft:block.mud.place block @a ~ ~ ~ 2 0.65
 
-execute align xyz run scoreboard players set @n[tag=wet_clay_mold,type=interaction,distance=..0.5] .data 9 
+execute align xyz run scoreboard players set @n[tag=fundamentals.block.wet_clay_mold,type=interaction,distance=..0.5] .data 9 
 return fail

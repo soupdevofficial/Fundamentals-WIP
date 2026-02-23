@@ -5,9 +5,9 @@
  # Created by .
 ##
 
-execute if score @s nbs_allsoulsho matches 1.. unless entity @e[tag=dragon,distance=..200] run function lzenl:music/all_souls_hollow/pause
-execute unless score @s nbs_allsoulsho matches 1.. if entity @e[tag=dragon,distance=..200] run function lzenl:music/all_souls_hollow/play
-execute if score @s[tag=!nbs_allsoulsho] nbs_allsoulsho matches 1.. if entity @e[tag=dragon,distance=..200] run tag @s add nbs_allsoulsho
+execute if score @s nbs_allsoulsho matches 1.. unless entity @e[tag=fundamentals.boss.dragon,distance=..200] run function lzenl:music/all_souls_hollow/pause
+execute unless score @s nbs_allsoulsho matches 1.. if entity @e[tag=fundamentals.boss.dragon,distance=..200] run function lzenl:music/all_souls_hollow/play
+execute if score @s[tag=!nbs_allsoulsho] nbs_allsoulsho matches 1.. if entity @e[tag=fundamentals.boss.dragon,distance=..200] run tag @s add nbs_allsoulsho
 
 
 

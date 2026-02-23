@@ -6,17 +6,17 @@ execute align xyz run summon block_display ~0.5 ~ ~0.5 {Tags:["clay_mold"],Passe
 
 execute store result score #temp .data run data get entity @s Rotation[0]
 
-execute if score #temp .data matches -45..45 as @e[type=block_display,tag=clay_mold,distance=..1] run rotate @s -90 0
+execute if score #temp .data matches -45..45 as @e[type=block_display,tag=fundamentals.block.clay_mold,distance=..1] run rotate @s -90 0
 
-execute if score #temp .data matches 46..135 as @e[type=block_display,tag=clay_mold,distance=..1] run rotate @s 0 0
+execute if score #temp .data matches 46..135 as @e[type=block_display,tag=fundamentals.block.clay_mold,distance=..1] run rotate @s 0 0
 
-execute if score #temp .data matches 136..180 as @e[type=block_display,tag=clay_mold,distance=..1] run rotate @s 90 0
+execute if score #temp .data matches 136..180 as @e[type=block_display,tag=fundamentals.block.clay_mold,distance=..1] run rotate @s 90 0
 
-execute if score #temp .data matches -180..-136 as @e[type=block_display,tag=clay_mold,distance=..1] run rotate @s 90 0
+execute if score #temp .data matches -180..-136 as @e[type=block_display,tag=fundamentals.block.clay_mold,distance=..1] run rotate @s 90 0
 
-execute if score #temp .data matches -135..-46 as @e[type=block_display,tag=clay_mold,distance=..1] run rotate @s 180 0
+execute if score #temp .data matches -135..-46 as @e[type=block_display,tag=fundamentals.block.clay_mold,distance=..1] run rotate @s 180 0
 
-execute as @n[type=block_display,tag=clay_mold,distance=..1] at @s on passengers run rotate @s ~180 0
+execute as @n[type=block_display,tag=fundamentals.block.clay_mold,distance=..1] at @s on passengers run rotate @s ~180 0
 
 
 scoreboard players reset #temp .data
@@ -27,7 +27,7 @@ execute if score #handed .data matches 2 store result score #return .data run da
 
 execute unless score #return .data matches 1..9 run scoreboard players set #return .data 9
 
-execute align xyz positioned ~0.5 ~ ~0.5 run scoreboard players operation @n[tag=clay_mold,tag=!set,type=interaction,distance=..0.5] .data = #return .data
+execute align xyz positioned ~0.5 ~ ~0.5 run scoreboard players operation @n[tag=fundamentals.block.clay_mold,tag=!set,type=interaction,distance=..0.5] .data = #return .data
 
-execute align xyz positioned ~0.5 ~ ~0.5 as @n[tag=clay_mold,tag=!set,type=interaction,distance=..1] on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_dry/baked
+execute align xyz positioned ~0.5 ~ ~0.5 as @n[tag=fundamentals.block.clay_mold,tag=!set,type=interaction,distance=..1] on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_dry/baked
 return fail

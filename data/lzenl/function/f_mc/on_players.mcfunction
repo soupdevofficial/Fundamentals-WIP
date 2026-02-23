@@ -17,9 +17,6 @@ execute as @s[tag=!attributes_set] run function lzenl:f_mc/gameplay/player/set_a
 #(fishing check) -> very light checks
 execute if score @s fishing matches 1.. at @s run function lzenl:fishing/start
 
-#delete this maybe
-execute as @s[tag=astral] at @s rotated ~ 0 positioned ^ ^ ^-0.5 run function lzenl:f_mc/gameplay/player/astral/body
-
 #check for sitting
 execute at @s as @n[type=donkey,tag=crafting_ui,tag=ui_open,distance=..1] at @s if function lzenl:uic/check_passenger run function lzenl:uic/exit_ui
 execute as @s[tag=ui_open] at @s run function lzenl:uic/use_crafting

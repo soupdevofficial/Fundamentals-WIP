@@ -11,7 +11,7 @@ execute as @s[tag=!comb.man.dmg] unless function lzenl:f_mc/gameplay/combat/armo
 
 
 execute as @s[tag=!comb.man.dmg] on attacker run function lzenl:f_mc/gameplay/combat/armor/element_get
-execute as @s[tag=comb.man.dmg] as @n[tag=skill.set,distance=..10,type=item_display] run function lzenl:f_mc/gameplay/combat/armor/element_get
+execute at @s[tag=comb.man.dmg] as @n[tag=skill.set,distance=..10,type=item_display] run function lzenl:f_mc/gameplay/combat/armor/element_get
 
 
 
@@ -22,8 +22,6 @@ execute if score #return .data matches 3 run data merge storage temp {data:{text
 execute if score #return .data matches 5 run data merge storage temp {data:{text:[{"shadow_color":-14737633,text:"🗡 ",color:"#fcbd3f"},{text:"","color":"#fcbd3f"}]}}
 execute if score #return .data matches 4 run data merge storage temp {data:{text:[{"shadow_color":-14737633,text:"🗡 ",color:"#176069"},{text:"","color":"#176069"}]}}
 execute if score #return .data matches 6 run data merge storage temp {data:{text:[{"shadow_color":-14737633,text:"🗡 ",color:"#8e31cc"},{text:"","color":"#8e31cc"}]}}
-
-
 
 
 
@@ -55,11 +53,15 @@ scoreboard players set #dmg_original .data 1000
 scoreboard players operation #dmg_original .data *= #dmg .data
 
 
+
 #divide by /10000
 
 execute store result score #multiplier_1 .data run data get storage f_mc:combat data.element_multiplier[0] 10
 execute store result score #multiplier_2 .data run data get storage f_mc:combat data.element_multiplier[1] 10
 execute store result score #multiplier_3 .data run data get storage f_mc:combat data.element_multiplier[2] 10
+
+
+
 
 execute unless score #multiplier_1 .data matches 1.. run scoreboard players set #multiplier_1 .data 10
 execute unless score #multiplier_2 .data matches 1.. run scoreboard players set #multiplier_2 .data 10
@@ -90,7 +92,6 @@ execute store result score #resist .data run data get entity @s AbsorptionAmount
 
 
 
-
 scoreboard players set #reduction .data 8
 
 execute store result score #armor_active .data run attribute @s minecraft:armor get 1
@@ -102,11 +103,15 @@ execute store result score #armor_active .data run attribute @s minecraft:armor 
 execute if score #armor_active .data matches 1.. run scoreboard players operation #dmg .data /= #reduction .data
 
 
+
+
 scoreboard players operation #dmg_original .data -= #dmg .data
 
 
 scoreboard players set #dmg_display .data 10000
 scoreboard players operation #dmg_display .data += #dmg .data
+
+
 execute as @s[tag=!vul] if score #armor_active .data matches 1.. run function lzenl:f_mc/gameplay/combat/armor/armor_damage_start
 
 
@@ -123,8 +128,8 @@ scoreboard players reset @s dmg_taken_absorbed
 
 
 
-execute as @s[tag=!boss] if score #armor_active .data matches 0 run data remove storage f_mc:combat data.display.bar
-execute if score #armor_active .data matches ..0 at @s[tag=dragon,tag=!res,tag=!vul,tag=!superarmor] run tag @s add downed
+execute as @s[tag=!fundamentals.boss] if score #armor_active .data matches 0 run data remove storage f_mc:combat data.display.bar
+execute if score #armor_active .data matches ..0 at @s[tag=fundamentals.boss.dragon,tag=!res,tag=!vul,tag=!superarmor] run tag @s add downed
 
 execute if score #resist .data matches 1.. unless score #armor_active .data matches 1.. run function lzenl:f_mc/gameplay/combat/armor/absorb_only
 
@@ -157,9 +162,6 @@ function lzenl:f_mc/gameplay/combat/armor/display_def
 
 
 
-
-
-
 execute if score #dmg_original .data matches 0 run return fail
  
 
@@ -171,9 +173,10 @@ scoreboard players operation #hp .data += #dmg_original .data
 
 tag @s add dmg
 
-execute at @s if score #hp .data matches ..0 run return run execute on attacker run damage @n[tag=dmg] 10000 generic by @s from @s
+execute at @s[tag=!comb.man.dmg] if score #hp .data matches ..0 run return run execute on attacker run damage @n[tag=dmg] 10000 generic by @s from @s
+execute at @s[tag=comb.man.dmg] if score #hp .data matches ..0 run return run execute as @n[tag=skill.set,distance=..10,type=item_display] run damage @n[tag=dmg] 10000 generic by @s from @s
 
 tag @s remove dmg
-
+tag @s remove comb.man.dmg
 execute store result entity @s Health int 0.0001 run scoreboard players get #hp .data
 

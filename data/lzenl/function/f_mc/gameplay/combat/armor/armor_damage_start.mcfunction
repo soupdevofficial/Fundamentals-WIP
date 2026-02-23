@@ -5,7 +5,7 @@
  # Created by .
 ##
 
-execute as @s[tag=dragon,tag=superarmor] run return fail
+execute as @s[tag=fundamentals.boss.dragon,tag=superarmor] run return fail
 
 scoreboard players operation @s weapon.timer_old = #timer .data
 execute store result score #timer .data run time query gametime
@@ -26,8 +26,8 @@ execute if score @s weapon.cooldown matches 100.. run scoreboard players set @s 
 
 data remove storage f_mc:combat data.display.bar
 
-execute store result score #armor_resistance .data run attribute @s minecraft:armor_toughness get 4
-scoreboard players add #armor_resistance .data 4
+execute store result score #armor_resistance .data run attribute @s minecraft:armor_toughness get 6
+scoreboard players add #armor_resistance .data 30
 
 execute store result score #armor_dmg_prev .data run attribute @s minecraft:armor modifier value get dmg -1000
 
@@ -36,7 +36,6 @@ execute store result score #armor_dmg_prev .data run attribute @s minecraft:armo
 attribute @s minecraft:armor modifier remove dmg
 
 scoreboard players set #armor_dmg .data 10000
-scoreboard players operation #armor_dmg .data += #dmg .data
 scoreboard players operation #armor_dmg .data *= @s weapon.cooldown
 execute store result score #armor_max_amount .data run attribute @s minecraft:armor get 1
 

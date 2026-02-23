@@ -8,14 +8,16 @@
 
 
 
+execute unless entity @e[type=slime,tag=fundamentals.boss.dragon_hp,distance=..300] run return run function lzenl:animations/ender_dragon/a/down/play_anim
 
 
-
-execute as @e[tag=dragon_root,type=block_display,distance=..100,limit=1] at @s positioned ~ ~-1 ~ run tp @e[tag=dragon,type=slime,distance=..300] ^ ^ ^-3
+execute as @e[tag=fundamentals.boss.dragon_root,type=block_display,distance=..100,limit=1] at @s positioned ~ ~-1 ~ run tp @e[tag=fundamentals.boss.dragon,type=slime,distance=..300] ^ ^ ^-3
 
 
 scoreboard players set #random .data 0
-execute as @n[type=slime,tag=dragon_hp,tag=downed,distance=..300] run return run function lzenl:animations/ender_dragon/a/down/play_anim
+execute as @n[type=slime,tag=fundamentals.boss.dragon_hp,tag=downed,distance=..300] run return run function lzenl:animations/ender_dragon/a/down/play_anim
+
+
 
 execute unless entity @p[tag=target,distance=..300] run tag @p add target
 execute as @p[tag=target,distance=..20] store result score #random .data run random value 1..80

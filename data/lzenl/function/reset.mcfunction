@@ -11,7 +11,7 @@ scoreboard objectives add .data dummy
 scoreboard objectives add .id dummy
 
 
-
+execute unless score #seed .data matches -2147483648..2147483647 store result score #seed .data run seed
 
 scoreboard objectives add fishing minecraft.used:minecraft.fishing_rod
 
@@ -58,12 +58,21 @@ data modify storage f_mc:combat data.elements set value {1:{1:4,2:0.5,3:2,4:0.5,
 scoreboard objectives add nbs_allsoulsho dummy
 scoreboard objectives add nbs_allsoulsho_t dummy
 
+scoreboard players set #rng.count.mod .data 1000
+scoreboard players set #rng.count.div .data 40
+
+scoreboard players set #worldgen.global.rng.mod .data 2147483647
+scoreboard players set #worldgen.local.rng.mult3 .data 142313731
+scoreboard players set #worldgen.local.rng.mult2 .data 34734223
+scoreboard players set #worldgen.local.rng.divmod .data 97
+scoreboard players set #worldgen.global.rng.postmult .data 673745223
 
 scoreboard players set #chunk_size .data 50
 scoreboard players set #chunk_size_half .data 25
 scoreboard players set #music.speed.slow .data 40
 scoreboard players set #-1000 .data -1000
 scoreboard players set #vt_-1 .data -1
+scoreboard players set #vt_2 .data 2
 scoreboard players set #vt_scale .data 1024
 scoreboard players operation #vt_scale2 .data = #vt_scale .data
 scoreboard players operation #vt_scale2 .data *= #vt_scale .data
@@ -81,3 +90,4 @@ team modify noCollision collisionRule never
 execute as @a run function lzenl:f_mc/gameplay/player/temp/temp_reset
 data merge storage minecraft:temp {random:{offset:{x:1,y:1,z:1}},loc:"no_dimension",data:{item:{log:""}},saved:{pos:[]},check:{stripped:""},id:0}
 
+forceload add 0 0 0 0

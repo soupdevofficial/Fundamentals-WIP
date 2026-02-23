@@ -30,6 +30,9 @@ scoreboard players operation #gen.math.x .data /= #chunk_size .data
 scoreboard players operation #gen.math.z .data /= #chunk_size .data
 scoreboard players operation #gen.math.y .data /= #chunk_size .data
 
+
+execute if score #chunk_distance .data matches 0 if score #gen.math.min.y .data matches -3..5 run return run function lzenl:f_mc/generation/chunking
+
 # get corners of cube of chunks
 scoreboard players operation #gen.math.max.x .data = #gen.math.x .data
 scoreboard players operation #gen.math.max.z .data = #gen.math.z .data
@@ -38,7 +41,7 @@ scoreboard players operation #gen.math.min.x .data = #gen.math.x .data
 scoreboard players operation #gen.math.min.z .data = #gen.math.z .data
 scoreboard players operation #gen.math.min.y .data = #gen.math.y .data
 
-execute if score #chunk_distance .data matches 0 run return run function lzenl:f_mc/generation/chunking
+
 
 scoreboard players operation #gen.math.max.x .data += #chunk_distance .data
 scoreboard players operation #gen.math.max.z .data += #chunk_distance .data
@@ -50,13 +53,6 @@ scoreboard players operation #gen.math.min.y .data -= #chunk_distance .data
 scoreboard players operation #gen.math.min.x.hold .data = #gen.math.min.x .data
 scoreboard players operation #gen.math.min.z.hold .data = #gen.math.min.z .data
 scoreboard players operation #gen.math.min.y.hold .data = #gen.math.min.y .data
-function lzenl:f_mc/generation/chunking
-
+execute if score #gen.math.min.y .data matches -3..5 run function lzenl:f_mc/generation/chunking
 
 function lzenl:f_mc/generation/cubing_chunks_x
-
-
-
-
-
-

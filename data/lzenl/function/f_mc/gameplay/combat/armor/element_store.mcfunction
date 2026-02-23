@@ -43,7 +43,7 @@ execute if entity @s[type=#dark] run data modify storage f_mc:combat data.elemen
 execute if entity @s[type=#light] run data modify storage f_mc:combat data.element_multiplier append from storage f_mc:combat data.got.5
 execute if entity @s[type=#abyssal] run data modify storage f_mc:combat data.element_multiplier append from storage f_mc:combat data.got.6
 
-execute if entity @s[tag=dragon] run return fail
+execute if entity @s[tag=fundamentals.boss.dragon] run return fail
 
 execute if data storage f_mc:combat data.element_multiplier[] run return fail
 

@@ -1,0 +1,1 @@
+$data modify storage temp data.ench_item.components.minecraft:custom_name set value {translate:"item.minecraft.$(name)",italic:false}

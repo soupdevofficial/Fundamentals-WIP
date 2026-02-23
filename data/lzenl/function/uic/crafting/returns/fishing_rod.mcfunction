@@ -14,3 +14,5 @@ give @p[distance=..1] fishing_rod
 
 
 advancement grant @p[distance=..1] only lzenl:game/2_craft
+advancement grant @p[distance=..1] only lzenl:game/fishing/root
+advancement grant @p[distance=..1] only lzenl:game/3_fishing

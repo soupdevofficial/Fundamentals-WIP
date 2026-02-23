@@ -12,9 +12,9 @@ execute as @e[tag=fishing,type=armor_stand] at @s run function lzenl:fishing/che
 
 execute as @e[type=armor_stand,tag=clay_bucket] at @s if entity @p[distance=..7] run tag @s remove picked
 execute as @e[type=donkey,tag=bloomery_ui] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/bloomery/melting
-execute as @e[tag=small_campfire,tag=lit] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/small_campfire/tick
+execute as @e[tag=fundamentals.block.small_campfire,tag=lit] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/small_campfire/tick
 execute as @e[tag=clay_bucket,type=item_display] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/clay_bucket/cool_down
-execute as @e[tag=clay_mold,type=interaction,tag=!fin] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/clay_mold/cool_down
+execute as @e[tag=fundamentals.block.clay_mold,type=interaction,tag=!fin] at @s if entity @p[distance=..500] run function lzenl:f_mc/blocks/clay_mold/cool_down
 
 
 execute as @a at @s run function lzenl:f_mc/main/onplayer_1sek
@@ -31,6 +31,3 @@ execute as @e[type=block_display,tag=dark_crystal] at @s if entity @p[distance=.
 function lzenl:f_mc/boss/leviathan/move
 
 execute as @a[scores={fmc.info=1..}] run function lzenl:f_mc/info
-
-
-execute as @a at @s run function lzenl:f_mc/generation/check_loc_change
