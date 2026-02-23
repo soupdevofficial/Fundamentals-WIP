@@ -25,4 +25,4 @@ execute as @s[tag=ui_open] at @s if function lzenl:uic/check_vehicle run functio
 
 #ui logic do NOT touch
 execute if items entity @s container.* *[item_name="execute"] at @s run function lzenl:uic/set_ui
-
+scoreboard players enable @s fmc.info
