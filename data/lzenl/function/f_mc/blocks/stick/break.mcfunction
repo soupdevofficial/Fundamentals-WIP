@@ -6,6 +6,7 @@
 ##
 
 execute on vehicle run kill @s
+execute on passengers run kill @s
 
 kill @s
 playsound block.stone.break block @a ~ ~ ~ 1 2

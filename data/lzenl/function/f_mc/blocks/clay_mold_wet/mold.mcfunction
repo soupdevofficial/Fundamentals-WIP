@@ -7,7 +7,7 @@
 
 
 scoreboard players add @s .data 1
-execute if score @s .data matches 10 run scoreboard players set @s .data 1
+execute if score @s .data matches 12 run scoreboard players set @s .data 1
 
 
 execute if score @s .data matches 1 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/sword
@@ -20,8 +20,11 @@ execute if score @s .data matches 6 on vehicle on passengers run function lzenl:
 
 execute if score @s .data matches 7 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/saw
 execute if score @s .data matches 8 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/ingot
-execute if score @s .data matches 9 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/standart
+execute if score @s .data matches 9 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/spear
+execute if score @s .data matches 10 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/shovel
 
+
+execute if score @s .data matches 11 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/standart
 playsound minecraft:block.mud.step block @a ~ ~ ~ 0.5 0
 
 

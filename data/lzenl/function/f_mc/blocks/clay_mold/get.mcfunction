@@ -22,7 +22,9 @@ execute if score @s .data matches 5 on vehicle on passengers run function lzenl:
 execute if score @s .data matches 6 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/set_mold/hammer
 execute if score @s .data matches 7 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/set_mold/saw
 execute if score @s .data matches 8 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/set_mold/ingot
-
+execute if score @s .data matches 9 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/set_mold/spear
+execute if score @s .data matches 10 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/set_mold/shovel
+execute if score @s .data matches 11 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/set_mold/standart
 
 
 execute if score @s .id matches 0 on target run advancement grant @s only lzenl:game/6_copper

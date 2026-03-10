@@ -24,8 +24,8 @@ fill ~ ~ ~ ~ ~ ~ air replace light
 
 execute on vehicle run function lzenl:f_mc/blocks/kill
 
-particle item{item:"stick"} ~ ~0.1 ~ 0 0.1 0 0.12 30
+particle block{block_state:"oak_wood"} ~ ~0.1 ~ 0 0.1 0 0.12 10
 
 
-playsound block.wood.break block @a ~ ~ ~ 2 0.5
+playsound block.wood.break block @a ~ ~ ~ 2 0
 

@@ -7,6 +7,7 @@
 execute on target run advancement grant @s only lzenl:game/2_pickup
 
 execute on vehicle run kill @s
+execute on passengers run kill @s
 
 kill @s
 

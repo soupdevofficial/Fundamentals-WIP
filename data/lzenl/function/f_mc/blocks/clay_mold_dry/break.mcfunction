@@ -16,14 +16,16 @@ execute if score #return .data matches 5 run summon item ~ ~0.5 ~ {Item:{id:"min
 execute if score #return .data matches 6 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:6},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Small Hammer]"}}}
 execute if score #return .data matches 7 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:7},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Small Saw]"}}}
 execute if score #return .data matches 8 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:8},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Ingot]"}}}
+execute if score #return .data matches 9 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:9},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Spear]"}}}
+execute if score #return .data matches 10 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",Count:1b,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:10},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold | Shape: [Shovel]"}}}
 
-execute unless score @s .data matches 1..8 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",count:1,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:9},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold"}}}
+execute unless score @s .data matches 1..10 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:clay_ball",count:1,components:{"minecraft:consumable":{consume_seconds:0,sound:"intentionally_empty",has_consume_particles:false},"minecraft:custom_data":{item:{id:8b,type:2},id:9},"minecraft:item_model":"minecraft:light_gray_carpet","minecraft:item_name":"Dry Clay Mold"}}}
 
 
 
 
 execute on vehicle run function lzenl:f_mc/blocks/kill
-playsound block.sand.break block @a ~ ~ ~ 3 0
+playsound block.decorated_pot.hit block @a ~ ~ ~ 3 0
 particle block{block_state:"light_gray_concrete_powder"} ~ ~ ~ 0.2 0.1 0.2 0.02 10
 
 

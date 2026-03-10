@@ -54,3 +54,5 @@ fill ~ ~ ~ ~ ~ ~ light[level=8] replace #replaceable
 
 
 tag @s add lit
+
+execute unless score @s active matches 1.. run scoreboard players set @s active 200

@@ -39,3 +39,12 @@ execute if score @s .data matches 6 run return run summon item ~ ~0.1 ~ {PickupD
 
 execute if score @s .data matches 7 run return run summon item ~ ~0.1 ~ {PickupDelay:8,Motion:[0.0,0.25,0.0],Item:{id:"minecraft:golden_horse_armor",components:{"minecraft:item_name":"Small Golden Saw"}}}
 #saw
+
+
+
+execute if score @s .data matches 9 run return run summon item ~ ~0.1 ~ {PickupDelay:8,Motion:[0.0,0.25,0.0],Item:{id:"minecraft:golden_spear"}}
+#spear
+
+
+execute if score @s .data matches 10 run return run summon item ~ ~0.1 ~ {PickupDelay:8,Motion:[0.0,0.25,0.0],Item:{id:"minecraft:golden_shovel"}}
+#shovel

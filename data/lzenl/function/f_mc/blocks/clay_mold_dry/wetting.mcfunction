@@ -20,5 +20,5 @@ playsound minecraft:entity.villager.work_leatherworker block @a ~ ~ ~ 0.25 1.5
 scoreboard players reset @s temp
 
 
-tag @s remove dry_clay_mold
-tag @s add wet_clay_mold
+tag @s remove fundamentals.block.dry_clay_mold
+tag @s add fundamentals.block.wet_clay_mold

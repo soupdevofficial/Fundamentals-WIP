@@ -13,7 +13,7 @@ execute on passengers as @s[tag=set] run function lzenl:f_mc/blocks/clay_mold_dr
 
 playsound minecraft:item.firecharge.use block @a ~ ~ ~ 0.25 1.5
 
-tag @s remove dry_clay_mold
-tag @s add clay_mold
+tag @s remove fundamentals.block.dry_clay_mold
+tag @s add fundamentals.block.clay_mold
 
 fill ~ ~ ~ ~ ~ ~ air replace #fire

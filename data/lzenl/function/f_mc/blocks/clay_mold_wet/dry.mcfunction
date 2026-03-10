@@ -22,5 +22,5 @@ playsound minecraft:block.fire.extinguish block @a ~ ~ ~ 0.25 1.5
 scoreboard players reset @s temp
 
 
-tag @s remove wet_clay_mold
-tag @s add dry_clay_mold
+tag @s remove fundamentals.block.wet_clay_mold
+tag @s add fundamentals.block.dry_clay_mold

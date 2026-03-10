@@ -24,7 +24,8 @@ execute if score @s .data matches 6 on vehicle on passengers run function lzenl:
 execute if score @s .data matches 7 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/fill_mold_iron/saw
 execute if score @s .data matches 8 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/fill_mold_iron/ingot
 
-
+execute if score @s .data matches 9 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/fill_mold_iron/spear
+execute if score @s .data matches 10 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold/fill_mold_iron/shovel
 
 
 
