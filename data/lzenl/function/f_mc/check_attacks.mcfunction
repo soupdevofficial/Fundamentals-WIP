@@ -24,9 +24,13 @@ advancement revoke @s only lzenl:f_mc/check/attacks
  execute as @e[tag=fundamentals.block.small_campfire,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/small_campfire/break
 
  #clay molds
- execute as @e[tag=fundamentals.block.wet_clay_mold,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_mold_wet/break
- execute as @e[tag=fundamentals.block.dry_clay_mold,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_mold_dry/break
- execute as @e[tag=fundamentals.block.clay_mold,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_mold/break
+  #clay molds
+ execute as @e[tag=fundamentals.block.clay_mold_root,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_mold/break_root
+
+
+ #clay bucket
+ execute as @e[tag=fundamentals.block.clay_bucket_root,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_bucket/break
+
 ##
 
 ## Heroes

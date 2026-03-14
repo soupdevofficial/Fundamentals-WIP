@@ -11,7 +11,7 @@ execute store result score #req1 .data run clear @p[distance=..1] clay_ball[!cus
 
 scoreboard players set #return .data 1
 execute unless block ~ ~1 ~ water run scoreboard players set #return .data 0
-execute unless score #req1 .data matches 1.. run scoreboard players set #return .data 0
+execute unless score #req1 .data matches 3.. run scoreboard players set #return .data 0
 
 
 execute unless score #return .data matches 1 run function lzenl:uic/crafting/fail

@@ -1,8 +1,19 @@
 execute if function lzenl:scroll_table/break run return fail
+
+
+
+
 execute store success score #temp .data run data modify entity @s item.components.minecraft:custom_data.Items set from block ~ ~-1 ~ Items
 execute if score #temp .data matches 0 run return fail
-execute as @a[distance=..7] if items entity @s container.* *[item_name="execute"] run tag @s add user
-execute as @a[distance=..7] if items entity @s player.cursor *[item_name="execute"] run tag @s add user
+
+
+execute at @s as @a[distance=..7] run function lzenl:arcane_altar_2/on_player
+
+
+
+execute unless entity @a[distance=..6,tag=user] run tag @a[distance=..6,sort=nearest] add user
+
+
 data merge storage craft {data:{run:""}}
 execute if items block ~ ~-1 ~ container.16 * unless items block ~ ~-1 ~ container.16 *[item_name="execute"] run item replace entity @p[distance=..10] player.cursor from block ~ ~-1 ~ container.16
 item replace block ~ ~-1 ~ container.16 with air
@@ -26,4 +37,6 @@ item replace entity @s contents with egg
 function lzenl:scroll_table/return/give with storage craft data
 function lzenl:scroll_table/set_content
 data modify entity @s item.components.minecraft:custom_data.Items set from block ~ ~-1 ~ Items
+
+execute as @a[distance=..7,tag=user] if items entity @s player.cursor *[item_name="execute"] run item replace entity @s player.cursor with air
 tag @p[tag=user,distance=..7] remove user

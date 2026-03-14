@@ -14,12 +14,14 @@ execute store result score #day .data run time query minecraft:day
 execute if score #day .data matches 1 run function lzenl:f_mc/season/count
 
 execute as @e[tag=scroll_table_root] at @s if entity @p[distance=..100] run function lzenl:scroll_table/check_content
-execute at @e[tag=fundamentals.block.small_campfire,tag=lit,distance=..100] if entity @p[distance=..100] run particle flame ~ ~0.1 ~ 0.1 0.2 0.1 0.001 2 force @a
+execute at @e[tag=fundamentals.block.small_campfire,tag=lit,distance=..100] if entity @p[distance=..100] run particle flame ~ ~0.2 ~ 0.1 0.2 0.1 0 1 force @a
 
 
 
 execute as @a run function lzenl:f_mc/on_players
 
+#clay bucket
+execute as @e[tag=fundamentals.block.clay_bucket_root] at @s if entity @p[distance=..50] run function lzenl:f_mc/blocks/clay_bucket/check
 
 #swopper
 execute as @e[type=block_display,tag=swopper_root] at @s positioned ~ ~-1 ~ if entity @p[distance=..100] run function lzenl:f_mc/blocks/swopper/check_activate

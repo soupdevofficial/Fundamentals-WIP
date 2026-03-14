@@ -20,7 +20,7 @@ item replace entity @s horse.8 with bow[custom_data={item:"mud"},item_name="exec
 
 item replace entity @s horse.10 with bow[custom_data={item:"bloomery"},item_name="execute",custom_name={"italic":false,"text":"Bloomery"},item_model="minecraft:mud_bricks",lore=[" ",{"color":"gray","italic":false,"text":"Requires:"},{"color":"gray","italic":false,"text":"8x Packed Mud"}],tooltip_display={hidden_components:["attribute_modifiers"]}] 1
 
-item replace entity @s horse.11 with bow[custom_data={item:"clay_bucket"},item_name="execute",custom_name={"italic":false,"text":"Wet Clay Bucket"},item_model="minecraft:cauldron",lore=[" ",{"color":"gray","italic":false,"text":"Requires:"},{"color":"gray","italic":false,"text":"1x Clay Ball"},{"color":"gray","italic":false,"text":"Water"}],tooltip_display={hidden_components:["attribute_modifiers"]}] 1
+item replace entity @s horse.11 with bow[custom_data={item:"clay_bucket"},item_name="execute",custom_name={"italic":false,"text":"Wet Clay Bucket"},item_model="minecraft:cauldron",lore=[" ",{"color":"gray","italic":false,"text":"Requires:"},{"color":"gray","italic":false,"text":"3x Clay Ball"},{"color":"gray","italic":false,"text":"Water"}],tooltip_display={hidden_components:["attribute_modifiers"]}] 1
 
 item replace entity @s horse.12 with bow[custom_data={item:"clay_mold"},item_name="execute",custom_name={"italic":false,"text":"Wet Clay Mold"},item_model="minecraft:gray_carpet",lore=[" ",{"color":"gray","italic":false,"text":"Requires:"},{"color":"gray","italic":false,"text":"2x Clay Ball"},{"color":"gray","italic":false,"text":"Water"}],tooltip_display={hidden_components:["attribute_modifiers"]}] 1
 

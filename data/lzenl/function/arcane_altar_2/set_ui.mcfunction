@@ -9,7 +9,6 @@
 
 
 
-execute unless entity @a[distance=..6,tag=user] run tag @a[distance=..6,sort=nearest] add user
 
 #enchant slot
 function lzenl:arcane_altar_2/enchant

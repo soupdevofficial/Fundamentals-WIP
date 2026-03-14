@@ -20,6 +20,14 @@
 		  },
 		  {
 			"namespace": "^minecraft$",
+			"path": "^recipe/golden_dandelion\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
+			"path": "^recipe/golden_apple\\.json$"
+		  },
+		  {
+			"namespace": "^minecraft$",
 			"path": "^recipe/repair_item\\.json$"
 		  },
 		  {

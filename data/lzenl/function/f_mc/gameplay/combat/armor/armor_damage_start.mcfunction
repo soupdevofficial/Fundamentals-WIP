@@ -8,7 +8,7 @@
 execute as @s[tag=fundamentals.boss.dragon,tag=superarmor] run return fail
 
 scoreboard players operation @s weapon.timer_old = #timer .data
-execute store result score #timer .data run time query gametime
+execute store result score #timer .data run time query day
 scoreboard players operation @s weapon.timer_delta = #timer .data
 
 scoreboard players operation @s weapon.timer_delta -= @s weapon.timer_old

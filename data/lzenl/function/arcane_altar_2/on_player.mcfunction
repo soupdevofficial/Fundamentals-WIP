@@ -5,6 +5,7 @@
  # Created by .
 ##
 execute if items entity @s container.* *[item_name="execute"] run tag @s add user
+execute unless entity @a[distance=..6,tag=user] run tag @a[distance=..6,sort=nearest] add user
 
 
 
