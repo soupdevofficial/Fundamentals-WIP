@@ -8,7 +8,7 @@
 
 execute if items entity @a[distance=..7,tag=user] player.cursor *[item_name=execute,custom_data~{rc.circle:true}] run function lzenl:f_mc/blocks/bloomery/recipes
 
-execute if block ~ ~-1 ~ minecraft:barrel[open=true] run function lzenl:f_mc/blocks/bloomery/smelt
+
 
 
 

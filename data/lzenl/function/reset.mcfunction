@@ -9,6 +9,7 @@ say Running on Junction!
 scoreboard objectives add fmc.info trigger "info"
 scoreboard objectives add .data dummy
 scoreboard objectives add .id dummy
+scoreboard objectives add .increment_1 dummy
 
 
 execute unless score #seed .data matches -2147483648..2147483647 store result score #seed .data run seed
@@ -57,6 +58,9 @@ data modify storage f_mc:combat data.elements set value {1:{1:4,2:0.5,3:2,4:0.5,
 
 scoreboard objectives add nbs_allsoulsho dummy
 scoreboard objectives add nbs_allsoulsho_t dummy
+
+scoreboard players set #5 .data 5
+scoreboard players set #100 .data 100
 
 scoreboard players set #rng.count.mod .data 1000
 scoreboard players set #rng.count.div .data 40

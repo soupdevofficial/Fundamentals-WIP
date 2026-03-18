@@ -44,7 +44,7 @@ item replace block ~ ~-1 ~ container.10 with poisonous_potato[!food,item_name="e
 item replace block ~ ~-1 ~ container.12 with poisonous_potato[!food,item_name="execute",custom_name="",item_model="black_stained_glass_pane",consumable={consume_seconds:999,sound:"intentionally_empty",animation:"none"},tooltip_display={hide_tooltip:true}] 1
 
 # --- Slot 13 ---
-item replace block ~ ~-1 ~ container.13 with poisonous_potato[!food,item_name="execute",custom_name="",item_model="black_stained_glass_pane",consumable={consume_seconds:999,sound:"intentionally_empty",animation:"none"},tooltip_display={hide_tooltip:true}] 1
+execute if score #return2 .data matches 0 run item replace block ~ ~-1 ~ container.13 with poisonous_potato[!food,item_name="execute",custom_name="",item_model="black_stained_glass_pane",consumable={consume_seconds:999,sound:"intentionally_empty",animation:"none"},tooltip_display={hide_tooltip:true}] 1
 
 # --- Slot 14 ---
 item replace block ~ ~-1 ~ container.14 with poisonous_potato[!food,item_name="execute",custom_name="",item_model="black_stained_glass_pane",consumable={consume_seconds:999,sound:"intentionally_empty",animation:"none"},tooltip_display={hide_tooltip:true}] 1

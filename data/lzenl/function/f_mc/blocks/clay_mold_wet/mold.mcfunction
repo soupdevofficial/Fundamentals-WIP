@@ -9,6 +9,8 @@
 scoreboard players add @s .data 1
 execute if score @s .data matches 12 run scoreboard players set @s .data 1
 
+execute if block ~ ~ ~ water run particle bubble_column_up ~ ~ ~ 0.25 0.2 0.25 0.00001 2
+
 
 execute if score @s .data matches 1 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/sword
 execute if score @s .data matches 2 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/axe

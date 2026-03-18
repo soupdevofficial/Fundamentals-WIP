@@ -21,8 +21,6 @@ execute if score @s .data matches 10 on vehicle on passengers run function lzenl
 
 
 execute if score @s .data matches 11 on vehicle on passengers run function lzenl:f_mc/blocks/clay_mold_wet/set_mold/standart
-tag @s[type=interaction] remove fundamentals.block.wet_clay_mold
-tag @s[type=interaction] add fundamentals.block.wet_clay_mold
-
+tag @s[type=interaction] remove fundamentals.block.clay_dry
+tag @s[type=interaction] add fundamentals.block.clay_wet
 tag @s[type=interaction] add set
-

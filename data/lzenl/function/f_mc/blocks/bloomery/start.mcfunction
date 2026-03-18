@@ -4,6 +4,11 @@ execute store result score #return1 .data run data modify entity @s item.compone
 
 execute at @s as @a[distance=..7] run function lzenl:arcane_altar_2/on_player
 
+
+execute if block ~ ~-1 ~ minecraft:barrel[open=true] run function lzenl:f_mc/blocks/bloomery/smelt
+
+
+
 execute if score #return1 .data matches 1.. run function lzenl:f_mc/blocks/bloomery/set_ui
 
 

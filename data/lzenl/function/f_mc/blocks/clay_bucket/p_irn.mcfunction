@@ -1,0 +1,5 @@
+
+data merge block ~ ~ ~ {note_block_sound:"minecraft:block.mud.break",profile:{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc3MzQzNzk4NzMzMCwKICAicHJvZmlsZUlkIiA6ICI5N2VmNDYyMzdhNGY0ZTQxYWY2ZTljYjg2MTdmNzc2OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJZb25kaXgiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzAyOWVjNjU4MWYxYzRkYjdhNTJiZDdlN2RhYTMzMGJkMjU2Y2M2MzJjNzUyMjczMmYyZDk3MWNjMDZiZWJiZSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]}} 
+playsound block.decorated_pot.place block @a[distance=..20]
+playsound block.iron.place block @a[distance=..20]
+tag @s add fundamentals.block.ceramic

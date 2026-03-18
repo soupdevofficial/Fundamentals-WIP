@@ -6,7 +6,8 @@
 ##
 
 advancement revoke @s only lzenl:f_mc/check/attacks
-
+execute as @e[type=interaction,distance=..7] on attacker run tag @s add fundamentals.misc.attacker
+schedule function lzenl:f_mc/delayed_conditional 1t
 
 ## fishing
  execute as @e[tag=fundamentals.fishing.reel,type=interaction,distance=..10] if data entity @s attack at @s run function lzenl:fishing/reel
@@ -25,11 +26,11 @@ advancement revoke @s only lzenl:f_mc/check/attacks
 
  #clay molds
   #clay molds
- execute as @e[tag=fundamentals.block.clay_mold_root,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_mold/break_root
+ execute as @e[tag=fundamentals.block.clay_mold,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_mold/break_root
 
 
  #clay bucket
- execute as @e[tag=fundamentals.block.clay_bucket_root,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_bucket/break
+ execute as @e[tag=fundamentals.block.clay_bucket,type=interaction,distance=..7] if data entity @s attack at @s run function lzenl:f_mc/blocks/clay_bucket/break
 
 ##
 
@@ -37,5 +38,10 @@ advancement revoke @s only lzenl:f_mc/check/attacks
  #aurora
  execute as @e[tag=fundamentals.heroes.aurora,type=interaction,distance=..7] if data entity @s attack run function lzenl:f_mc/gameplay/combat/hero/aurora/find
 ##
+
+
+
+
+
 
 execute as @e[type=interaction,distance=..7] if data entity @s attack run data remove entity @s attack

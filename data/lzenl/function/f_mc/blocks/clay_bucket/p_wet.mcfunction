@@ -1,0 +1,4 @@
+
+playsound block.mud.place block @a[distance=..20] ~ ~ ~ 1 0
+data merge block ~ ~ ~ {note_block_sound:"minecraft:block.mud.break",profile:{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc3MzQyODI5ODQyMCwKICAicHJvZmlsZUlkIiA6ICI2N2M1NzUxMzY1Mzg0MWJjYTQ1MTkwY2IyZGFiMWEwOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJuaXRlc3RhbGtlcjg3IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ODM2N2Q1MmQ5YTNkZjgxZGJjYzI2M2YwMmE3MmM3NzIwYjFiNmFkOTUxMDc0MGZiZjVkM2I3ZjgzNTJmYmMiCiAgICB9CiAgfQp9"}]}} 
+tag @s add fundamentals.block.clay_wet

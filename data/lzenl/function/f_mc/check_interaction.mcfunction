@@ -15,11 +15,7 @@ advancement revoke @s only lzenl:f_mc/check/interact
  #campfire
  execute as @e[tag=fundamentals.block.small_campfire,type=interaction,distance=..7] if data entity @s interaction at @s run function lzenl:f_mc/blocks/small_campfire/lit
  #wet clay mold
- execute as @e[tag=fundamentals.block.wet_clay_mold,type=interaction,distance=..7] if data entity @s interaction at @s run function lzenl:f_mc/blocks/clay_mold_wet/mold
-
- #filled clay mold
- execute as @e[tag=fin,tag=fundamentals.block.clay_mold,type=interaction,distance=..7] if data entity @s interaction at @s run function lzenl:f_mc/blocks/clay_mold/get
-
+ execute as @e[tag=fundamentals.block.clay_wet,tag=fundamentals.block.clay_mold,type=interaction,distance=..7] if data entity @s interaction at @s run function lzenl:f_mc/blocks/clay_mold_wet/mold
 ##
 
 ## Heroes

@@ -1,0 +1,14 @@
+{ 
+"function": "minecraft:set_lore",
+    "entity":"this",
+    "mode":"replace_all",
+     "lore": [ 
+         [
+            { "bold": false, "color": "gray", "italic": false, "text": "Progress:         " }, 
+            { "score": { "name": "#smelt_progress", "objective": ".data" } }, 
+            { "bold": false, "color": "gray", "italic": false, "text": "%" }
+        ]
+        
+    ]
+    
+}

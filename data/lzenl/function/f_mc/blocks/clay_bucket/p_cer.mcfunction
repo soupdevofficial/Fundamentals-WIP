@@ -1,0 +1,3 @@
+playsound block.decorated_pot.place block @a[distance=..20] ~ ~ ~ 1 0
+data merge block ~ ~ ~ {note_block_sound:"block.decorated_pot.place",profile:{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc3MzQyODc2OTI4MywKICAicHJvZmlsZUlkIiA6ICJkNWRmZDkzNjA4MTg0YTdlYTgyOTNlMzFlZDY4MmI5OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJzY2htZWtlbGRvcmYiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM2NGEzZjU1YThjMTUyNmQ2MjgwZTViNzhiZTFmMjdhNGZlOTA4NDU4OTRiZjJiZmI4YjNkOTYxMTRmNzM0YSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]}} 
+tag @s add fundamentals.block.ceramic

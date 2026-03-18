@@ -69,6 +69,10 @@ scoreboard players set #armor_max .data 30
 function lzenl:f_mc/gameplay/combat/armor/display
 
 execute store result score #armor_active .data run attribute @s minecraft:armor get 1
-execute if score #armor_active .data matches ..0 at @s run playsound item.shield.break player @a ~ ~ ~ 10 0 1
-execute if score #armor_active .data matches ..0 at @s run function lzenl:f_mc/gameplay/combat/dmg_indicator {text:'{text:"#BREAK",color:"red"}'}
+execute unless score #armor_active .data matches ..0 run return fail
 
+execute at @s run playsound item.shield.break player @a ~ ~ ~ 10 0 1
+execute at @s run function lzenl:f_mc/gameplay/combat/dmg_indicator {text:'{text:"#BREAK",color:"red"}'}
+effect give @s slowness 2 1 true
+effect give @s weakness 1 5 true
+execute at @s anchored eyes run particle crit ^ ^ ^ 0.1 0.5 0.1 0.5 10
