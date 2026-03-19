@@ -48,20 +48,15 @@ scoreboard players operation #smelt_progress .data %= #duration .data
 scoreboard players operation #smelt_progress .data *= #100 .data
 scoreboard players operation #smelt_progress .data /= #duration .data
 
-function lzenl:f_mc/blocks/bloomery/prgbar
 scoreboard players set #return2 .data 1
-
-
-
-
-
 scoreboard players operation #smelts_completed .data /= #duration .data
 
 
 
 #show progress 1-100%
 # show bar from 1-20
-
+execute if score #smelts_completed .data matches 1.. run scoreboard players set #smelt_progress .data 100
+function lzenl:f_mc/blocks/bloomery/prgbar
 
 execute unless score #smelts_completed .data matches 1.. run return fail
 
