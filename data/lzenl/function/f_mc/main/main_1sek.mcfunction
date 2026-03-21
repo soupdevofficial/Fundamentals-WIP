@@ -9,6 +9,7 @@ schedule function lzenl:f_mc/main/main_1min 60s append
 
 
 
+execute as @e[tag=display,type=text_display] at @s unless function lzenl:check/vehicle run kill @s
 
 
 

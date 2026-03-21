@@ -89,6 +89,14 @@ gamerule max_snow_accumulation_height 5
 gamerule max_command_sequence_length 999999
 gamerule keep_inventory true
 
+
+
+
+team add aap "angry_at_player"
+team modify aap friendlyFire false
+team modify aap color red
+
+
 team add noCollision "noCollision"
 team modify noCollision collisionRule never
 execute as @a run function lzenl:f_mc/gameplay/player/temp/temp_reset

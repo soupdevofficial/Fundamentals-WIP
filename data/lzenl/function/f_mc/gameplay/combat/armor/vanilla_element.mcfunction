@@ -15,8 +15,11 @@
 
 
 execute at @s if items entity @s weapon.mainhand #dark_items run return run function lzenl:f_mc/gameplay/combat/armor/z_get_item {lore:[{"italic":false,"color":"gray","text":"Element:"},{"color":"#176069","text":" [dark]"}],element:4}
+
 execute at @s if items entity @s weapon.mainhand *[damage_resistant={types:"#minecraft:is_fire"}] run return run function lzenl:f_mc/gameplay/combat/armor/z_get_item {lore:[{"italic":false,"color":"gray","text":"Element:"},{"color":"#FF3C00","text":" [infernal]"}],element:3}
+
 execute at @s if items entity @s weapon.mainhand #minecraft:piglin_loved run return run function lzenl:f_mc/gameplay/combat/armor/z_get_item {lore:[{"italic":false,"color":"gray","text":"Element:"},{"color":"light_purple","text":" [magic]"}],element:2}
+
 execute at @s if items entity @s weapon.mainhand * run return run function lzenl:f_mc/gameplay/combat/armor/z_get_item {lore:[{"italic":false,"color":"gray","text":"Element:"},{"color":"#999999","text":" [normal]"}],element:1}
 
 
